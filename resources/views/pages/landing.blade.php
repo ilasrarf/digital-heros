@@ -60,7 +60,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a href="#" class="nav-item nav-link active">الرئيسية</a>
-                        <a href="blog.html" class="nav-item nav-link">المقالات</a>
+                        <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
                         <div class="nav-item dropdown text-end" dir="ltr">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">شكون حنا</a>
                             <div class="dropdown-menu m-0 text-end">
@@ -73,8 +73,10 @@
                         <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
                         <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
                     </div>
-                    <a href="login.html" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block">دخول</a>
-                    <a href="register2.html" class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block" style="background-color: #FBA504;">التسجيل</a>
+                    <a href="{{ route('login') }}" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block">دخول</a>
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block" style="background-color: #FBA504;">التسجيل</a>
+                    @endif
                 </div>
             </nav>
   <!-- End Hero -->
@@ -85,7 +87,7 @@
                             <h1 class="text-white text-center mb-4 animated slideInDown">نادي أبطال الديجيتال <br><p class="text-secondary" style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> علال الفاسي</p></h1>
                             <h5 class="text-white h5b-3 text-center animated slideInDown">موقع إلكتروني لواحد الكلوب بثانوية علال الفاسي</h5>
                             <div class="d-grid gap-2 col-4 mx-auto">
-                            <a href="register2.html" class="btn btn-secondary py-sm-1 px-sm-5 rounded-3 animated slideInLeft">نخارط معانا</a>
+                            <a href="{{ route('register') }}" class="btn btn-secondary py-sm-1 px-sm-5 rounded-3 animated slideInLeft">نخارط معانا</a>
                         </div>
                         </div>
                         <div class="col-lg-6 my-4 text-center text-lg-start">

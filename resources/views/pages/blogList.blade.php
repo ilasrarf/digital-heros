@@ -61,7 +61,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
-                        <a href="#المقالات" class="nav-item nav-link">المقالات</a>
+                        <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
                         <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
                         <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
                     </div>
@@ -76,15 +76,14 @@
 
     <div class="row m-5">
       <div class="leftcolumn">
-        <div class="card">
-          <img src="img/hero.png" style="height:200px;">
-          <h2>التعرف على مجالات الانترنت</h2>
-          <h5>بطال الديجتال موقع إلكتروني لواحد الكلوب بثانوية علال الفاسي كيفاش نشأ أبطال الديجتال أستاذ
-             المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو . علاش أبطال الديجتال أبطال الديجتال سمية تاع واحد الكرتون كيهدر علا شي أشخاص كاينين فالعالم تاع الديجتال  و
-              كانوا هما الأبطال تماك و لهذا داكشي سمينا الكلوب هاد سمية  شنو الهدف من الكلوب الهدف هو اننا نحاولو نكتشفو 
-             المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</h5>
-          <a href="" dir="ltr"><strong>...المزيد</strong></a>
-        </div>
+            @foreach ($posts as $post)
+            <div class="card">
+                <img src="{{Voyager::image($post->image)}}" style="height: 500px;">
+                <h2>{{$post->title}}</h2>
+                <h5>{{$post->excerpt}}</h5>
+                <a href="{{route('posts.show', $post->id)}}" dir="ltr"><strong>...المزيد</strong></a>
+            </div>
+        @endforeach
       </div>
       <div class="rightcolumn">
         <div class="card">

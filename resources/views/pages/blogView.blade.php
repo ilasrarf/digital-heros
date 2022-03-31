@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,22 +20,22 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Favicons -->
-    <link href="img/أبطال الديجيتال.png" rel="icon">
-    <link href="img/أبطال الديجيتال.png" rel="apple-touch-icon">
+    <link href="/img/أبطال الديجيتال.png" rel="icon">
+    <link href="/img/أبطال الديجيتال.png" rel="apple-touch-icon">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/blog.css">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/blog.css">
     
 </head>
 
@@ -54,7 +54,7 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="#" class="navbar-brand p-0">
-                    <img src="img/أبطال الديجيتال.png" alt="Logo">
+                    <img src="/img/أبطال الديجيتال.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -62,7 +62,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
-                        <a href="#المقالات" class="nav-item nav-link">المقالات</a>
+                        <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
                         <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
                         <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
                     </div>
@@ -78,34 +78,24 @@
     <div class="row m-5">
       <div class="leftcolumn">
         <div class="card">
-          <img src="img/hero.png" >Image</img>
+          <img src="{{ Voyager::image($post->image)}}" alt="..." style="height: 500px" >
         </div>
         <div>
-            <h2 class="mt-4">التعرف على مجالات الانترنت</h2>
+            <h2 class="mt-4">{{$post->title}}</h2>
             <div class="d-flex justify-content-center align-items-center mt-4 flex-column flex-md-row">
                 <h5 class="text-muted mx-5"><i class="bi bi-person"></i> ilyass</h5>
                 <h5 class="text-muted mx-5"><i class="bi bi-eye"></i> 65</h5>
-                <h5 class="text-muted mx-3"><i class="bi bi-calendar-event"></i> 30/03/2022</h5>
+                <h5 class="text-muted mx-3"><i class="bi bi-calendar-event"></i> <span dir="ltr">{{$post->created_at->diffForHumans()}}</span></h5>
             </div>
             <div class="d-flex justify-content-center mb-4">
                 <hr width="40%" class="text-dark">
             </div>
-                <h5 class="text-center">بطال الديجتال موقع إلكتروني لواحد الكلوب بثانوية علال الفاسي كيفاش نشأ أبطال الديجتال أستاذ
-                   المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو . علاش أبطال الديجتال أبطال الديجتال سمية تاع واحد الكرتون كيهدر علا شي أشخاص كاينين فالعالم تاع الديجتال  و
-                    كانوا هما الأبطال تماك و لهذا داكشي سمينا الكلوب هاد سمية  شنو الهدف من الكلوب الهدف هو اننا نحاولو نكتشفو 
-                   المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب
-                </h5>
-                <h5 class="text-center">
-                    طال الديجتال موقع إلكتروني لواحد الكلوب بثانوية علال الفاسي كيفاش نشأ أبطال الديجتال أستاذ
-                المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو . علاش أبطال الديجتال أبطال الديجتال سمية تاع واحد الكرتون كيهدر علا شي أشخاص كاينين فالعالم تاع الديجتال  و
-                    كانوا هما الأبطال تماك و لهذا داكشي سمينا الكلوب هاد سمية  شنو الهدف من الكلوب الهدف هو اننا نحاولو نكتشفو 
-                المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب
-                </h5>
+                <h5 class="text-center">{{$post->body}}</h5>
         </div>
       </div>
       <div class="rightcolumn">
         <div class="card">
-          <img width="40%" class="d-block m-auto" src="img/أبطال الديجيتال.png" alt="Logo">
+          <img width="40%" class="d-block m-auto" src="/img/أبطال الديجيتال.png" alt="Logo">
           <strong class="text-muted text-center my-4">أبطال الديجيتال  هو نادي لاكتشاف المواهب المعلوماتية و تطويرها وكيحرص على ادماج الشباب في عالم الديجيتال </strong>
         </div>
         <div class="card">
@@ -188,17 +178,17 @@
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/isotope/isotope.pkgd.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="/lib/wow/wow.min.js"></script>
+<script src="/lib/easing/easing.min.js"></script>
+<script src="/lib/waypoints/waypoints.min.js"></script>
+<script src="/lib/counterup/counterup.min.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script src="/lib/lightbox/js/lightbox.min.js"></script>
 
 <!-- Template Javascript -->
-<script src="js/main.js"></script>
-<script src="js/script.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/script.js"></script>
 </body>
 
 </html>
