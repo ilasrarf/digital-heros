@@ -102,9 +102,9 @@
         </div>
         <div class="card">
           <h3>Popular Post</h3>
-          <div class="text-dark"><img style="width: 20%;" src="img/hero-bg.jpg" alt=""> <a href="#">hhhhhhhhh</a></div><br>
-          <div class="text-dark"><img style="width: 20%;" src="img/hero-bg.jpg" alt=""> <a href="">hhhhhhhh</a></div><br>
-          <div class="text-dark"><img style="width: 20%;" src="img/hero-bg.jpg" alt=""> <a href="">hhhhhhhhhh</a></div>
+          <div class="text-dark"><img style="width: 20%;" src="/img/hero-bg.jpg" alt=""> <a href="#">hhhhhhhhh</a></div><br>
+          <div class="text-dark"><img style="width: 20%;" src="/img/hero-bg.jpg" alt=""> <a href="">hhhhhhhh</a></div><br>
+          <div class="text-dark"><img style="width: 20%;" src="/img/hero-bg.jpg" alt=""> <a href="">hhhhhhhhhh</a></div>
         </div>
       </div>
     </div>
@@ -144,7 +144,7 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="row g-3 my-5">
-                        <img class="img-fluid" src="img/أبطال الديجيتال.png" alt="Image">
+                        <img class="img-fluid" src="/img/أبطال الديجيتال.png" alt="Image">
                 </div>
             </div>
         </div>

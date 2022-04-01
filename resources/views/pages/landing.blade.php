@@ -64,10 +64,10 @@
                         <div class="nav-item dropdown text-end" dir="ltr">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">شكون حنا</a>
                             <div class="dropdown-menu m-0 text-end">
+                                <a href="#about" class="dropdown-item">شكون حنا</a>
                                 <a href="#الأهداف" class="dropdown-item">الأهداف</a>
-                                <a href="" class="dropdown-item">الأنشطة</a>
                                 <a href="#الأعضاء" class="dropdown-item">الأعضاء</a>
-                                <a href="#المنخرطين" class="dropdown-item">المنخرطين</a>
+                                {{-- <a href="#المنخرطين" class="dropdown-item">المنخرطين</a> --}}
                             </div>
                         </div>
                         <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
@@ -94,7 +94,7 @@
                             <img class="img-fluid animated zoomIn" src="img/أبطال الديجيتال.png" alt="">
                         </div>
                     </div>
-                </div>
+                </div><div id="about"></div>
         <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
         <defs>
           <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
@@ -110,37 +110,38 @@
         </g>
       </svg>
     </div>
+    
         </section>
         <!-- Navbar & Hero End -->
 <!-- //////////////////////// -->
-<div class="wow fadeInUp mt-5" data-wow-delay="0.1s">
-    <h3 class="section-title text-secondary justify-content-center"><span></span>&nbsp; شكون هو&nbsp;<span></span></h3>
-    <h1 class="text-center"> نادي أبطال الديجيتال </h1>
-</div>
-<div class="hh" data-wow-delay="0.1s">
-    <div class="d-lg-flex align-items-center w-75">
-        <div class="parent flex-shrink-0">
-            <div class="ch ch1" id="1" onclick="content(1)">
-                <i class="ms-4 bi bi-x-diamond-fill"></i>
-                <p class="me-2 mt-3">كيفاش</p>
+    <div class="wow fadeInUp mt-5" data-wow-delay="0.1s">
+        <h3 class="section-title text-secondary justify-content-center"><span></span>&nbsp; شكون هو&nbsp;<span></span></h3>
+        <h1 class="text-center"> نادي أبطال الديجيتال </h1>
+    </div>
+    <div class="hh" data-wow-delay="0.1s">
+        <div class="d-lg-flex align-items-center w-75">
+            <div class="parent flex-shrink-0">
+                <div class="ch ch1" id="1" onclick="content(1)">
+                    <i class="ms-4 bi bi-x-diamond-fill"></i>
+                    <p class="me-2 mt-3">كيفاش</p>
+                </div>
+                <div class="ch" id="2" onclick="content(2)">
+                    <i class="ms-4 bi bi-x-diamond-fill"></i>
+                    <p class="me-2 mt-3">علاش</p>
+                </div>
+                <div class="ch" id="3" onclick="content(3)">
+                    <i class="ms-4 bi bi-x-diamond-fill"></i>
+                    <p class="me-2 mt-3">شنو الهدف</p>
+                </div>
             </div>
-            <div class="ch" id="2" onclick="content(2)">
-                <i class="ms-4 bi bi-x-diamond-fill"></i>
-                <p class="me-2 mt-3">علاش</p>
+            <div class="mx-5">
+                <h2 style="color: #fba504;" id="head">كيفاش</h2>
+                <hr style="color: #6222CC; height: 10px; border-radius: 15px;">   
+                <h4>كيفاش نشأ أبطال الديجتال</h4>
+                <h5>أستاذ المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو .</h5>
             </div>
-            <div class="ch" id="3" onclick="content(3)">
-                <i class="ms-4 bi bi-x-diamond-fill"></i>
-                <p class="me-2 mt-3">شنو الهدف</p>
-            </div>
-        </div>
-        <div class="mx-5">
-            <h2 style="color: #fba504;" id="head">كيفاش</h2>
-            <hr style="color: #6222CC; height: 10px; border-radius: 15px;">   
-            <h4>كيفاش نشأ أبطال الديجتال</h4>
-            <h5>أستاذ المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو .</h5>
         </div>
     </div>
-</div>
 <!-- //////////////////////// -->
 
         
@@ -159,7 +160,6 @@
                             </div>
                             <h5 class="mb-3">SEO Optimization</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -169,7 +169,6 @@
                             </div>
                             <h5 class="mb-3">Web Design</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -179,7 +178,6 @@
                             </div>
                             <h5 class="mb-3">Social Media Marketing</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -189,7 +187,6 @@
                             </div>
                             <h5 class="mb-3">Email Marketing</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -199,7 +196,6 @@
                             </div>
                             <h5 class="mb-3">PPC Advertising</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -209,7 +205,6 @@
                             </div>
                             <h5 class="mb-3">App Development</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -278,7 +273,10 @@
 <!-- Feature Start -->
 <section class="dark container">
 	<div class="container py-4">
-		<h1 class="h1 text-center" id="pageHeaderTitle">My Cards Dark</h1>
+		<div class="wow fadeInUp mb-5" data-wow-delay="0.1s">
+            <h3 class="section-title text-secondary justify-content-center"><span></span>&nbsp;مقالات&nbsp;<span></span></h3>
+            {{-- <h1 class="text-center mb-5"></h1> --}}
+        </div>
 
 		<article class="postcard dark blue">
 			<a class="postcard__img_link" href="#">
@@ -293,11 +291,11 @@
 				</div>
 				<div class="postcard__bar"></div>
 				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-				<ul class="postcard__tagbox">
+				{{-- <ul class="postcard__tagbox">
 					<li class="tag__item play blue">
 						<a href="#"><i class="fas fa-play mr-2"></i> Play Episode</a>
 					</li>
-				</ul>
+				</ul> --}}
 			</div>
 		</article>
 		<article class="postcard dark red">
@@ -313,11 +311,11 @@
 				</div>
 				<div class="postcard__bar"></div>
 				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-				<ul class="postcard__tagbox">
+				{{-- <ul class="postcard__tagbox">
 					<li class="tag__item play red">
 						<a href="#"><i class="fas fa-play mr-2"></i> Play Episode</a>
 					</li>
-				</ul>
+				</ul> --}}
 			</div>
 		</article>
 		<article class="postcard dark green">
@@ -333,15 +331,15 @@
 				</div>
 				<div class="postcard__bar"></div>
 				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
-				<ul class="postcard__tagbox">
+				{{-- <ul class="postcard__tagbox">
 					<li class="tag__item play green">
 						<a href=""><i class="fas fa-play mr-2"></i>Play Episode</a>
 					</li>
-				</ul>
+				</ul> --}}
 			</div>
 		</article>
 	</div>
-    <button class="btn btn-warning">المزيد...</button>
+    <a href="{{route('blogs.index')}}" class="btn btn-warning">المزيد...</a>
 </section>
 <!-- Feature End -->
 
@@ -350,10 +348,10 @@
         <div id="المنخرطين">
         <div class="container-xxl bg-primary fact py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">
-                <div class="row g-4">
+                <div class="row justify-content-center g-4">
                     <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
                         <i class="fa fa-certificate fa-3x text-secondary mb-3"></i>
-                        <h1 class="text-white mb-2" data-toggle="counter-up">1234</h1>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">14</h1>
                         <p class="text-white mb-0">الأنشطة</p>
                     </div>
                     <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
@@ -365,11 +363,6 @@
                         <i class="fa fa-users fa-3x text-secondary mb-3"></i>
                         <h1 class="text-white mb-2" data-toggle="counter-up">50</h1>
                         <p class="text-white mb-0">المنخرطين</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                        <i class="fa fa-check fa-3x text-secondary mb-3"></i>
-                        <h1 class="text-white mb-2" data-toggle="counter-up">1234</h1>
-                        <p class="text-white mb-0">؟؟</p>
                     </div>
                 </div>
             </div>

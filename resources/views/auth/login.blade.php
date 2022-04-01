@@ -59,9 +59,7 @@
       <!-- Spinner End -->
 
       <!-- Navbar-->
-      <nav
-          class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-2 py-lg-0"
-        >
+      <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-2 py-lg-0">
           <a href="" class="navbar-brand p-0">
             <img src="img/أبطال الديجيتال.png" alt="Logo" />
           </a>

@@ -77,10 +77,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <div class="navbar-nav mx-auto py-0">
-                  <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
-                  <a href="blog.html" class="nav-item nav-link">المقالات</a>
+                  <a href="{{route('homes')}}" class="nav-item nav-link active">الرئيسية</a>
+                  <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
                   <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
-                  <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+                  <a href="{{route('homes')}}" class="nav-item nav-link">تواصل معنا</a>
               </div>
               <a href="{{ route('login') }}" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block"
               >دخول</a
@@ -304,7 +304,7 @@
                         </div>
                       </div>
                       <div class="input_div">
-                        <div class="input_text">
+                        <div class="input_text" dir="ltr">
                             <input id="password" type="password" class="pass_type @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
                             <label for="password">{{ __('كلمة السر') }}</label>
                           <i class="fa fa-eye-slash password_eye"></i>
@@ -320,7 +320,7 @@
                         </div>
                         </div>
 
-                        <div class="input_text">
+                        <div class="input_text" dir="ltr">
                             <input id="password-confirm" type="password" class="confirm_pass_type" name="password_confirmation" required autocomplete="new-password">
                             <label for="password-confirm" >{{ __('اعد كلمة السر') }}</label>
                           <i class="fa fa-eye-slash con_eye"></i>

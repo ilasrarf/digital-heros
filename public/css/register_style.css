@@ -370,7 +370,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .step_1 {
-    margin-top: 60px
+    margin-top: -15px
 }
 
 .step_2 {
@@ -382,11 +382,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .step_3 {
-    margin-top: 50px
+    margin-top: 15px
 }
 
 .step_4 {
-    margin-top: 150px
+    margin-top: 245px
 }
 
 .h4_txt {
