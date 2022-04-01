@@ -59,7 +59,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="#" class="nav-item nav-link active">الرئيسية</a>
+                        <a href="{{route('homes')}}" class="nav-item nav-link active">الرئيسية</a>
                         <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
                         <div class="nav-item dropdown text-end" dir="ltr">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">شكون حنا</a>
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
-                        <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+                        <a href="{{route('homes')}}" class="nav-item nav-link">تواصل معنا</a>
                     </div>
                     <a href="{{ route('login') }}" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block">دخول</a>
                     @if (Route::has('register'))
@@ -113,7 +113,11 @@
         </section>
         <!-- Navbar & Hero End -->
 <!-- //////////////////////// -->
-<div class="hh">
+<div class="wow fadeInUp mt-5" data-wow-delay="0.1s">
+    <h3 class="section-title text-secondary justify-content-center"><span></span>&nbsp; شكون هو&nbsp;<span></span></h3>
+    <h1 class="text-center"> نادي أبطال الديجيتال </h1>
+</div>
+<div class="hh" data-wow-delay="0.1s">
     <div class="d-lg-flex align-items-center w-75">
         <div class="parent flex-shrink-0">
             <div class="ch ch1" id="1" onclick="content(1)">
@@ -130,7 +134,7 @@
             </div>
         </div>
         <div class="mx-5">
-            <h2 style="color: #fba504;" id="head">distracted</h2>
+            <h2 style="color: #fba504;" id="head">كيفاش</h2>
             <hr style="color: #6222CC; height: 10px; border-radius: 15px;">   
             <h4>كيفاش نشأ أبطال الديجتال</h4>
             <h5>أستاذ المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو .</h5>
@@ -331,13 +335,13 @@
 				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
 				<ul class="postcard__tagbox">
 					<li class="tag__item play green">
-						<a href="#"><i class="fas fa-play mr-2"></i> Play Episode</a>
+						<a href=""><i class="fas fa-play mr-2"></i>Play Episode</a>
 					</li>
 				</ul>
 			</div>
 		</article>
 	</div>
-    <button>voir plus...</button>
+    <button class="btn btn-warning">المزيد...</button>
 </section>
 <!-- Feature End -->
 
@@ -350,7 +354,7 @@
                     <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
                         <i class="fa fa-certificate fa-3x text-secondary mb-3"></i>
                         <h1 class="text-white mb-2" data-toggle="counter-up">1234</h1>
-                        <p class="text-white mb-0">Years Experience</p>
+                        <p class="text-white mb-0">الأنشطة</p>
                     </div>
                     <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
                         <i class="fa fa-users-cog fa-3x text-secondary mb-3"></i>
@@ -365,7 +369,7 @@
                     <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
                         <i class="fa fa-check fa-3x text-secondary mb-3"></i>
                         <h1 class="text-white mb-2" data-toggle="counter-up">1234</h1>
-                        <p class="text-white mb-0">Compleate Projects</p>
+                        <p class="text-white mb-0">؟؟</p>
                     </div>
                 </div>
             </div>
@@ -392,29 +396,29 @@
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
                             
                             <form>
-                                <div class="row g-3">
+                                <div class="row g-3 text-action">
                                     <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name" dir="rtl">اسم المستخدم</label>
+                                            <label class="text-dark" for="name" dir="rtl">اسم المستخدم</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="email" class="form-control" id="email" placeholder="الإيمايل ديالك">
-                                            <label for="email">الإيمايل ديالك</label>
+                                            <label class="text-dark" for="email">الإيمايل ديالك</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="subject" placeholder="الموضوع">
-                                            <label for="subject">الموضوع</label>
+                                            <label class="text-dark" for="subject">الموضوع</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control" placeholder="رسالة" id="message" style="height: 150px"></textarea>
-                                            <label for="message">رسالة</label>
+                                            <label class="text-dark" for="message">رسالة</label>
                                         </div>
                                     </div>
                                     <div class="col-12">

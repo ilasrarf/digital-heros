@@ -61,13 +61,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
+                        <a href="{{route('homes')}}" class="nav-item nav-link active">الرئيسية</a>
                         <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
                         <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
-                        <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+                        <a href="{{route('homes')}}" class="nav-item nav-link">تواصل معنا</a>
                     </div>
-                    <a href="login.html" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block">دخول</a>
-                    <a href="register2.html" class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block" style="background-color: #FBA504;">التسجيل</a>
+                    <a href="{{ route('login') }}" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block">دخول</a>
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block" style="background-color: #FBA504;">التسجيل</a>
+                    @endif
                 </div>
             </nav>
   <!-- End Hero -->
@@ -84,7 +86,7 @@
             <h2 class="mt-4">{{$post->title}}</h2>
             <div class="d-flex justify-content-center align-items-center mt-4 flex-column flex-md-row">
                 <h5 class="text-muted mx-5"><i class="bi bi-person"></i> ilyass</h5>
-                <h5 class="text-muted mx-5"><i class="bi bi-eye"></i> 65</h5>
+                <h5 class="text-muted mx-5"><i class="bi bi-eye"></i>{{$post->nb_visit}}</h5>
                 <h5 class="text-muted mx-3"><i class="bi bi-calendar-event"></i> <span dir="ltr">{{$post->created_at->diffForHumans()}}</span></h5>
             </div>
             <div class="d-flex justify-content-center mb-4">

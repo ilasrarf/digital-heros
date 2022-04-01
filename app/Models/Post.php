@@ -11,7 +11,6 @@ class Post extends Model
 
     protected $fillable = [
         'id',
-        'id',
         'author_id',
         'category_id',
         'title',
@@ -24,5 +23,6 @@ class Post extends Model
         'meta_keywords',
         'status',
         'featured',
+        'nb_visit'
     ];
 }

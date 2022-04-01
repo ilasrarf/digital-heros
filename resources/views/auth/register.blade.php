@@ -82,15 +82,16 @@
                   <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
                   <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
               </div>
-              <a href="login.html" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block"
-                >دخول</a
-              >
-              <a
-                href="#register"
-                class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block"
-                style="background-color: #fba504"
-                >التسجيل</a
-              >
+              <a href="{{ route('login') }}" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block"
+              >دخول</a
+            >
+            @if (Route::has('register'))
+            <a
+              href="{{ route('register') }}"
+              class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block"
+              style="background-color: #fba504"
+              >التسجيل</a>
+              @endif
             </div>
           </nav>
         <!-- Navbar-->
@@ -106,7 +107,7 @@
               </div>
   
                   <div class="right-side">
-                      <form method="POST" action="{{ route('register') }}">
+                      <form method="POST" action="{{ route('user.register') }}" enctype="multipart/form-data">
                           @csrf
                           <div class="main active">
                               <div class="manage">
@@ -115,19 +116,19 @@
                           {{-- name & lastname --}}
                           <div class="input_div">
                               <div class="input_text">
-                                <input id="name" type="text" class="written_name @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" require required autocomplete="name" >
-                                <label for="name">{{ __('السمية') }}</label>
+                                <input id="firstname" type="text" class="written_name @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname') }}" require required autocomplete="firstname" >
+                                <label for="firstname">{{ __('السمية') }}</label>
     
                                     <div class="col-md-6">
     
-                                        @error('name')
+                                        @error('firstname')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
                                     </div>
                               </div>
-                              {{-- <div class="input_text">
+                              <div class="input_text">
                                 <input id="lastname" class="form-control @error('الكنية') is-invalid @enderror" name="lastname" value="{{ old('الكنية') }}" require required autocomplete="lastname" type="text" required /> 
                                 <label for="lastname">{{ __('الكنية') }}</label>
   
@@ -139,50 +140,54 @@
                                       </span>
                                   @enderror
                               </div>
-                              </div> --}}
+                              </div>
                           </div>
                           {{-- end name & lastname --}}
 
-                        {{--nb telephone --}}
-                            {{-- <div class="input_div">
+                       {{-- nb telephone --}}
+                            <div class="input_div">
                               
                               <div class="input_text">
-                                  <input id="telephone" type="number" class="form-control @error('number') is-invalid @enderror" name="number" value="{{ old('number') }}" require required autocomplete="number">
-                                  <label for="number">{{ __('0600000000*') }}</label>
+                                  <input id="tele" type="number" class="form-control @error('tele') is-invalid @enderror" name="tele" value="{{ old('tele') }}" require required autocomplete="tele">
+                                  <label for="tele">{{ __('0600000000*') }}</label>
   
                                   <div class="col-md-6">
-                                      @error('number')
+                                      @error('tele')
                                               <span class="invalid-feedback" role="alert">
                                                   <strong>{{ $message }}</strong>
                                               </span>
                                           @enderror
                                       </div>
                               </div>
-                            </div> --}}
+                            </div>
                         {{-- end nb telephone --}}
+                        <div class="mb-3">
+                          <label for="date" class="form-label text-dark">Date</label>
+                          <input class="chois" type="date" id="date" name="date" required />
+                      </div>
   
                         {{-- Sexe --}}
   
-                            {{-- <h5 class="text-dark my-3 mx-2">الجنس</h5>
+                            <h5 class="text-dark my-3 mx-2">الجنس</h5>
                             <div class="d-flex my-2 mx-2">
                                 <div class="form-check">
-                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                <label class="text-dark" for="flexRadioDefault1">ذكر</label>
+                                <input type="radio" name="sexe" id="homme" value="homme"/>
+                                <label class="text-dark" for="homme">ذكر</label>
                                 </div>
                                 <div class="form-check">
-                                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                <label class="text-dark" for="flexRadioDefault2">أنثى</label>
+                                <input type="radio" name="sexe" id="femme" value="femme"/>
+                                <label class="text-dark" for="femme">أنثى</label>
                                 </div>
-                            </div> --}}
+                            </div>
   
                         {{-- end Sexe --}}
 
                         {{-- photo --}}
   
-                            {{-- <div class="mb-3">
-                                <label for="formFileMultiple" class="form-label text-dark">حمل صورة</label>
-                                <input class="chois" type="file" id="formFileMultiple" multiple />
-                                </div> --}}
+                            <div class="mb-3">
+                                <label for="avatar" class="form-label text-dark">حمل صورة</label>
+                                <input class="chois" type="file" id="avatar" name="avatar" />
+                            </div>
   
                         {{-- end photo --}}
   
@@ -203,13 +208,13 @@
                         <h3>المعلومات الدراسية</h3>
                       </div>
                       <div class="d-flex">
-                        <div class="col-md-4">
+                        {{-- <div class="col-md-4">
                             
                           <label for="role" class="form-label text-dark mx-2">{{ __('القسم') }}</label>
                           
                             <div class="col-md-6">
                                 {{-- <input id="role_id" type="email" class="form-control @error('role_id') is-invalid @enderror" name="role_id" value="{{ old('role_id') }}" require required autocomplete="email"> --}}
-                                <select name="role_id" id="role_id">
+                                {{-- <select name="role_id" id="role_id">
                                     <option value="3">Student</option>
                                 </select>
                                 @error('role_id')
@@ -218,50 +223,56 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
+                        </div> --}}
 
 
                         {{-- hadi dyala wach mokarar wla la  --}}
 
-                        {{-- <div class="d-flex flex-column mx-2">
-                          <label for="inputState" class="form-label text-dark mt-1 mx-5">مكرر في السنة 3 ؟</label>
+                        <div class="d-flex flex-column mx-2">
+                          <label for="double_sur_classe" class="form-label text-dark mt-1 mx-5">مكرر في السنة 3 ؟</label>
                           <div class="d-flex mx-5">
                             <div class="form-check">
-                              <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                              <input type="radio" name="double_sur_classe" id="flexRadioDefault1" value="1"/>
                               <label class="text-muted" for="flexRadioDefault1">نعم</label>
                             </div>
                             <div class="form-check">
-                              <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                              <input type="radio" name="double_sur_classe" id="flexRadioDefault2" value="0" />
                               <label class="text-muted" for="flexRadioDefault2">لا</label>
                             </div>
                           </div>
-                        </div> --}}
+                        </div>
 
                      </div>
                      
 
                      {{-- hadi dyal mo3dal dawra omihnat lab omihnat l2ab --}}
 
-                      {{-- <div class="input_div">
+                     <div class="input_div">
+                      <div class="input_text">
+                        <input type="text" required name="classe"/>
+                        <label>Classe</label>
+                      </div>
+                    </div>
+                      <div class="input_div">
                         <div class="input_text">
-                          <input type="text" required />
+                          <input type="text" required name="note_de_semester"/>
                           <label>معدل الدورة الأولى</label>
                         </div>
-                      </div> --}}
-                      {{-- <div class="input_div">
-                        <div class="input_text">
-                          <input type="text" require required /> <label>مهنة الأب</label>
-                        </div>
-                        <input type="checkbox" class="mt-3" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                        <label class="text-muted mt-2" for="flexRadioDefault2">متوفي</label>
                       </div>
                       <div class="input_div">
                         <div class="input_text">
-                          <input type="text" require required /> <label>مهنة الأم</label>
+                          <input type="text" name="travail_de_pere" /> <label>مهنة الأب</label>
                         </div>
-                        <input type="checkbox" class="mt-3" name="flexRadioDefault" id="flexRadioDefault2" />
-                        <label class="text-muted mt-2" for="flexRadioDefault2">متوفية</label>
-                      </div> --}}
+                        {{-- <input type="checkbox" class="mt-3" name="travail_de_pere" id="flexRadioDefault2" value="" /> --}}
+                        {{-- <label class="text-muted mt-2" for="flexRadioDefault2">متوفي</label> --}}
+                      </div>
+                      <div class="input_div">
+                        <div class="input_text">
+                          <input type="text" name="travail_de_mere"  /> <label>مهنة الأم</label>
+                        </div>
+                        {{-- <input type="checkbox" class="mt-3" name="travail_de_mere" id="flexRadioDefault2" /> --}}
+                        {{-- <label class="text-muted mt-2" for="flexRadioDefault2">متوفية</label> --}}
+                      </div>
 
                         <div class="button step_2 step_3">
                             <button class="prev_btn">السابق</button>

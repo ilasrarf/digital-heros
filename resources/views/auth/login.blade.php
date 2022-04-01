@@ -75,20 +75,21 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
-                <a href="blog.html" class="nav-item nav-link">المقالات</a>
+                <a href="{{route('homes')}}" class="nav-item nav-link active">الرئيسية</a>
+                <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
                 <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
-                <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+                <a href="{{route('homes')}}" class="nav-item nav-link">تواصل معنا</a>
             </div>
-            <a href="login.html" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block"
+            <a href="{{ route('login') }}" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block"
               >دخول</a
             >
+            @if (Route::has('register'))
             <a
-              href="#register"
+              href="{{ route('register') }}"
               class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block"
               style="background-color: #fba504"
-              >التسجيل</a
-            >
+              >التسجيل</a>
+              @endif
           </div>
         </nav>
       <!-- Navbar-->
