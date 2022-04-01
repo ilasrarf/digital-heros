@@ -162,7 +162,7 @@
     width: 100%
 }
 
-input[type="text"],[type="date"] {
+input[type="text"],[type="date"],[type="email"] {
     height: 45px;
     width: 100%;
     outline: 0;
