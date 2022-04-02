@@ -61,7 +61,7 @@
                     <div class="navbar-nav mx-auto py-0">
                         <a href="{{route('homes')}}" class="nav-item nav-link active">الرئيسية</a>
                         <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
-                        <div class="nav-item dropdown text-end" dir="ltr">
+                        <div class="nav-item dropdown text-end">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">شكون حنا</a>
                             <div class="dropdown-menu m-0 text-end">
                                 <a href="#about" class="dropdown-item">شكون حنا</a>
@@ -433,7 +433,7 @@
             <div class="container py-5 px-lg-5">
                 <div class="row g-5">
                     <div class="col-md-4 col-lg-3">
-                        <p class="section-title text-white h5 mb-4"><strong>العنوان</strong><span></span></p>
+                        <p class="section-title text-white h5 mb-4"><span></span><strong>العنوان</strong></p>
                         <p><i class="fa fa-map-marker-alt me-3"></i> الثانوية الإعدادية علال الفاسي</p>
                         <p><i class="fa fa-phone-alt me-3"></i > 09876 543 212+</p>
                         <p><i class="fa fa-envelope me-3"></i> info@example.com</p>
@@ -445,14 +445,14 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a class="btn btn-link text-end" href="#"> شكون حنا</a>
-                        <a class="btn btn-link text-end" href="contact.html"> تواصل معنا</a>
-                        <a class="btn btn-link text-end" href="">سياسة الخصوصية</a>
-                        <a class="btn btn-link text-end" href="">الشروط والأحكام</a>
+                        <p class="section-title text-white h5 mb-4">رابط سريع<span></span></p>
+                        <a class="btn btn-link" href="#"> شكون حنا</a>
+                        <a class="btn btn-link" href="contact.html"> تواصل معنا</a>
+                        <a class="btn btn-link" href="">سياسة الخصوصية</a>
+                        <a class="btn btn-link" href="">الشروط والأحكام</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4"><strong>نادي أبطال الديجيتال</strong><span></span></p>
+                        <p class="section-title text-white h5 mb-4"><span></span><strong>نادي أبطال الديجيتال</strong></p>
                         <p>الهدف هو اننا نحاولو نكتشفو المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</p>
                         
                     </div>
@@ -465,14 +465,14 @@
             </div>
             <div class="container px-lg-2">
                 <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <div class="row ">
+                        <div class="col-md-5 text-center text-md-end mb-3 mb-md-0">
                             &copy; <a class="border-bottom" href="#">Degital</a>, جميع الحقوق محفوظة. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							<!-- من تصميم <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
                         </div>
-                        <div class="col-md-6 text-center text-md-end" dir="ltr">
+                        <div class="col-md-4 text-center text-md-star">
                             <div class="footer-menu">
                                 <a href="">الرئيسية</a>
                                 <a href="">Cookies</a>

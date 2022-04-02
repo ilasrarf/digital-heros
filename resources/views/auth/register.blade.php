@@ -162,16 +162,16 @@
                             </div>
                         {{-- end nb telephone --}}
                         <div class="mb-3">
-                          <label for="date" class="form-label text-dark">Date</label>
-                          <input class="chois" type="date" id="date" name="date" required />
+                          <label for="date" class="form-label fw-bold" style="color:rgb(129, 33, 219)">تاريخ الإزدياد</label>
+                          <input class="chois" type="date" id="date" name="date" require required />
                       </div>
   
                         {{-- Sexe --}}
   
-                            <h5 class="text-dark my-3 mx-2">الجنس</h5>
+                            <h5 class="my-3 mx-2 fw-bold" style="color:rgb(129, 33, 219)">الجنس</h5>
                             <div class="d-flex my-2 mx-2">
                                 <div class="form-check">
-                                <input type="radio" name="sexe" id="homme" value="homme"/>
+                                <input type="radio" name="sexe" id="homme" value="homme" checked/>
                                 <label class="text-dark" for="homme">ذكر</label>
                                 </div>
                                 <div class="form-check">
@@ -185,8 +185,8 @@
                         {{-- photo --}}
   
                             <div class="mb-3">
-                                <label for="avatar" class="form-label text-dark">حمل صورة</label>
-                                <input class="chois" type="file" id="avatar" name="avatar" />
+                                <label for="avatar" class="form-label fw-bold" style="color:rgb(129, 33, 219)">حمل صورة</label>
+                                <input class="chois" type="file" id="avatar" name="avatar" require required/>
                             </div>
   
                         {{-- end photo --}}
@@ -205,7 +205,7 @@
   
                   <div class="main">
                       <div class="manage">
-                        <h3>المعلومات الدراسية</h3>
+                        <h3 class="text-secondary">المعلومات الدراسية</h3>
                       </div>
                       <div class="d-flex">
                         {{-- <div class="col-md-4">
@@ -236,7 +236,7 @@
                               <label class="text-muted" for="flexRadioDefault1">نعم</label>
                             </div>
                             <div class="form-check">
-                              <input type="radio" name="double_sur_classe" id="flexRadioDefault2" value="0" />
+                              <input type="radio" name="double_sur_classe" id="flexRadioDefault2" value="0" checked/>
                               <label class="text-muted" for="flexRadioDefault2">لا</label>
                             </div>
                           </div>
@@ -249,29 +249,30 @@
 
                      <div class="input_div">
                       <div class="input_text">
-                        <input type="text" required name="classe"/>
-                        <label>Classe</label>
+                        <input type="text" require required name="classe"/>
+                        <label>القسم</label>
                       </div>
                     </div>
                       <div class="input_div">
                         <div class="input_text">
-                          <input type="text" required name="note_de_semester"/>
+                          <input type="text" require required name="note_de_semester"/>
                           <label>معدل الدورة الأولى</label>
                         </div>
                       </div>
                       <div class="input_div">
+                        <input type="checkbox" class="mt-3" name="travail_de_pere" id="flexRadioDefault2" value="" />
+                        <label class="text-muted mt-2" for="flexRadioDefault2">متوفي</label>
                         <div class="input_text">
-                          <input type="text" name="travail_de_pere" /> <label>مهنة الأب</label>
+                          <input type="text" required name="travail_de_pere" /> <label>مهنة الأب</label>
                         </div>
-                        {{-- <input type="checkbox" class="mt-3" name="travail_de_pere" id="flexRadioDefault2" value="" /> --}}
-                        {{-- <label class="text-muted mt-2" for="flexRadioDefault2">متوفي</label> --}}
                       </div>
                       <div class="input_div">
+                        <input type="checkbox" class="mt-3" name="travail_de_mere" id="flexRadioDefault2" />
+                        <label class="text-muted mt-2" for="flexRadioDefault2">متوفية</label>
                         <div class="input_text">
-                          <input type="text" name="travail_de_mere"  /> <label>مهنة الأم</label>
+                          <input type="text" required name="travail_de_mere"  /> <label>مهنة الأم</label>
                         </div>
-                        {{-- <input type="checkbox" class="mt-3" name="travail_de_mere" id="flexRadioDefault2" /> --}}
-                        {{-- <label class="text-muted mt-2" for="flexRadioDefault2">متوفية</label> --}}
+                        
                       </div>
 
                         <div class="button step_2 step_3">
@@ -287,11 +288,11 @@
   
                     <div class="main">
                       <div class="manage">
-                        <h3>إنشاء الحساب</h3>
+                        <h3 class="text-secondary">إنشاء الحساب</h3>
                       </div>
                       <div class="input_div">
                         <div class="input_text">
-                            <input id="email" type="email" class="input_text @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                            <input id="email" type="email" class="input_text @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" require required autocomplete="email">
                             <label for="email">{{ __('الإيمايل ديالك') }}</label>
 
                             <div class="col-md-6">
@@ -305,7 +306,7 @@
                       </div>
                       <div class="input_div">
                         <div class="input_text" dir="ltr">
-                            <input id="password" type="password" class="pass_type @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                            <input id="password" type="password" class="pass_type @error('password') is-invalid @enderror" name="password" require required autocomplete="new-password">
                             <label for="password">{{ __('كلمة السر') }}</label>
                           <i class="fa fa-eye-slash password_eye"></i>
 
@@ -321,7 +322,7 @@
                         </div>
 
                         <div class="input_text" dir="ltr">
-                            <input id="password-confirm" type="password" class="confirm_pass_type" name="password_confirmation" required autocomplete="new-password">
+                            <input id="password-confirm" type="password" class="confirm_pass_type" name="password_confirmation" require required autocomplete="new-password">
                             <label for="password-confirm" >{{ __('اعد كلمة السر') }}</label>
                           <i class="fa fa-eye-slash con_eye"></i>
                         </div>
@@ -373,59 +374,59 @@
         <!-- Footer Start -->
                 
         <div class="container-fluid text-light footers wow fadeIn" data-wow-delay="0.1s" dir="rtl">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-4 col-lg-3">
-                        <p class="section-title text-white h5 mb-4"><strong>العنوان</strong><span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i> الثانوية الإعدادية علال الفاسي</p>
-                        <p><i class="fa fa-phone-alt me-3"></i > 09876 543 212+</p>
-                        <p><i class="fa fa-envelope me-3"></i> info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+          <div class="container py-5 px-lg-5">
+            <div class="row g-5">
+                <div class="col-md-4 col-lg-3">
+                    <p class="section-title text-white h5 mb-4"><span></span><strong>العنوان</strong></p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i> الثانوية الإعدادية علال الفاسي</p>
+                    <p><i class="fa fa-phone-alt me-3"></i > 09876 543 212+</p>
+                    <p><i class="fa fa-envelope me-3"></i> info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a class="btn btn-link text-end" href="index.html"> شكون حنا</a>
-                        <a class="btn btn-link text-end" href="contact.html"> تواصل معنا</a>
-                        <a class="btn btn-link text-end" href="">سياسة الخصوصية</a>
-                        <a class="btn btn-link text-end" href="">الشروط والأحكام</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4"><strong>نادي أبطال الديجيتال</strong><span></span></p>
-                        <p>الهدف هو اننا نحاولو نكتشفو المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</p>
-                        
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="row g-3 my-5">
-                                <img class="img-fluid" src="img/أبطال الديجيتال.png" alt="Image">
-                        </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <p class="section-title text-white h5 mb-4">رابط سريع<span></span></p>
+                    <a class="btn btn-link" href="#"> شكون حنا</a>
+                    <a class="btn btn-link" href="contact.html"> تواصل معنا</a>
+                    <a class="btn btn-link" href="">سياسة الخصوصية</a>
+                    <a class="btn btn-link" href="">الشروط والأحكام</a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <p class="section-title text-white h5 mb-4"><span></span><strong>نادي أبطال الديجيتال</strong></p>
+                    <p>الهدف هو اننا نحاولو نكتشفو المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</p>
+                    
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row g-3 my-5">
+                            <img class="img-fluid" src="img/أبطال الديجيتال.png" alt="Image">
                     </div>
                 </div>
             </div>
+        </div>
             <div class="px-lg-2">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="index.html">Degital</a>, جميع الحقوق محفوظة. 
-                            
-                            <!--/*** This template is free as long as you keep the footers author’s credit link/attribution link/backlink. If you'd like to use the template without the footers author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
-                        </div>
-                        <div class="col-md-6 text-center text-md-end" dir="ltr">
-                            <div class="footers-menu">
-                                <a href="">FQAs</a>
-                                <a href="">مساعدة</a>
-                                <a href="">Cookies</a>
-                                <a href="">الرئيسية</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              <div class="copyright">
+                  <div class="row">
+                      <div class="col-md-5 text-center text-md-end mb-3 mb-md-0">
+                          &copy; <a class="border-bottom" href="index.html">Degital</a>, جميع الحقوق محفوظة. 
+                          
+                          <!--/*** This template is free as long as you keep the footers author’s credit link/attribution link/backlink. If you'd like to use the template without the footers author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                          <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
+                      </div>
+                      <div class="col-md-4 text-center text-md-star">
+                          <div class="footers-menu">
+                              <a href="">FQAs</a>
+                              <a href="">مساعدة</a>
+                              <a href="">Cookies</a>
+                              <a href="">الرئيسية</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
         <!-- Footer End -->
   

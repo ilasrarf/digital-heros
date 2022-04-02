@@ -109,7 +109,7 @@
                             <h3 class="my-2 text-secondary" style="font-size: 30px">الدخول</h3>
                         </div>
                         <div class="row mb-3">
-                            <input id="email" type="email" class=" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="{{ __('Email Address') }}" required autocomplete="email" >
+                            <input id="email" type="email" class=" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="{{ __('الإيمايل ديالك') }}" required autocomplete="email" >
                             <div class="col-md-6">
                                 
                                 @error('email')
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <input id="password" type="password" class=" @error('password') is-invalid @enderror" name="password" placeholder="{{ __('Password') }}" required autocomplete="current-password">
+                            <input id="password" type="password" class=" @error('password') is-invalid @enderror" name="password" placeholder="{{ __('كلمة السر') }}" required autocomplete="current-password">
                             <div class="col-md-6">
                                 
                                 @error('password')
@@ -130,17 +130,17 @@
                                 @enderror
                             </div>
                             
-                            <div class="row mb-3">
-                                <div class="col-md-5 offset-md-4">
+                            {{-- <div class="row mb-3">
+                                <div class="col-md-5 offset-md-6">
                                     <div class="form-check">
                                         <label class="form-check-label text-dark" for="remember">
-                                            {{ __('Remember Me') }}
-                                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                            {{ __('تفكرني') }}
+                                            <input class="form-check-input"  style="float: right; margin-left: 0.5em;" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                         
                                         </label>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                                 
                         </div>
@@ -148,12 +148,12 @@
                         <input type="submit" value="{{ __('Login') }}">
                                 @if (Route::has('password.request'))
                                     <a class="forgot text-muted" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        {{ __('نسيت كلمة المرور؟') }}
                                     </a>
                                 @endif
                         
                         
-                        <div class="col-md-12">
+                        {{-- <div class="col-md-12">
                             <ul class="social-network social-circle">
                               <li>
                                 <a href="#" class="icoFacebook" title="Facebook"
@@ -166,7 +166,7 @@
                                 ></a>
                               </li>
                             </ul>
-                          </div>
+                          </div> --}}
                     </form>
                 </div>
             </div>
@@ -174,61 +174,61 @@
       </div>
       <!-- login end -->
 <!-- Footer Start -->
-        
-<div class="container-fluid text-light footers wow fadeIn" data-wow-delay="0.1s" dir="rtl">
-    <div class="container py-5 px-lg-5">
-        <div class="row g-5">
-            <div class="col-md-4 col-lg-3">
-                <p class="section-title text-white h5 mb-4"><strong>العنوان</strong><span></span></p>
-                <p><i class="fa fa-map-marker-alt me-3"></i> الثانوية الإعدادية علال الفاسي</p>
-                <p><i class="fa fa-phone-alt me-3"></i > 09876 543 212+</p>
-                <p><i class="fa fa-envelope me-3"></i> info@example.com</p>
-                <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                <a class="btn btn-link text-end" href="index.html"> شكون حنا</a>
-                <a class="btn btn-link text-end" href="contact.html"> تواصل معنا</a>
-                <a class="btn btn-link text-end" href="">سياسة الخصوصية</a>
-                <a class="btn btn-link text-end" href="">الشروط والأحكام</a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <p class="section-title text-white h5 mb-4"><strong>نادي أبطال الديجيتال</strong><span></span></p>
-                <p>الهدف هو اننا نحاولو نكتشفو المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</p>
                 
+<div class="container-fluid text-light footers wow fadeIn" data-wow-delay="0.1s" dir="rtl">
+  <div class="container py-5 px-lg-5">
+    <div class="row g-5">
+        <div class="col-md-4 col-lg-3">
+            <p class="section-title text-white h5 mb-4"><span></span><strong>العنوان</strong></p>
+            <p><i class="fa fa-map-marker-alt me-3"></i> الثانوية الإعدادية علال الفاسي</p>
+            <p><i class="fa fa-phone-alt me-3"></i > 09876 543 212+</p>
+            <p><i class="fa fa-envelope me-3"></i> info@example.com</p>
+            <div class="d-flex pt-2">
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="row g-3 my-5">
-                        <img class="img-fluid" src="img/أبطال الديجيتال.png" alt="Image">
-                </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <p class="section-title text-white h5 mb-4">رابط سريع<span></span></p>
+            <a class="btn btn-link" href="#"> شكون حنا</a>
+            <a class="btn btn-link" href="contact.html"> تواصل معنا</a>
+            <a class="btn btn-link" href="">سياسة الخصوصية</a>
+            <a class="btn btn-link" href="">الشروط والأحكام</a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <p class="section-title text-white h5 mb-4"><span></span><strong>نادي أبطال الديجيتال</strong></p>
+            <p>الهدف هو اننا نحاولو نكتشفو المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</p>
+            
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="row g-3 my-5">
+                    <img class="img-fluid" src="img/أبطال الديجيتال.png" alt="Image">
             </div>
         </div>
     </div>
+</div>
     <div class="px-lg-2">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="index.html">Degital</a>, جميع الحقوق محفوظة. 
-                    
-                    <!--/*** This template is free as long as you keep the footers author’s credit link/attribution link/backlink. If you'd like to use the template without the footers author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
-                </div>
-                <div class="col-md-6 text-center text-md-end" dir="ltr">
-                    <div class="footers-menu">
-                        <a href="">FQAs</a>
-                        <a href="">مساعدة</a>
-                        <a href="">Cookies</a>
-                        <a href="">الرئيسية</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      <div class="copyright">
+          <div class="row">
+              <div class="col-md-5 text-center text-md-end mb-3 mb-md-0">
+                  &copy; <a class="border-bottom" href="index.html">Degital</a>, جميع الحقوق محفوظة. 
+                  
+                  <!--/*** This template is free as long as you keep the footers author’s credit link/attribution link/backlink. If you'd like to use the template without the footers author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                  <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
+              </div>
+              <div class="col-md-4 text-center text-md-star">
+                  <div class="footers-menu">
+                      <a href="">FQAs</a>
+                      <a href="">مساعدة</a>
+                      <a href="">Cookies</a>
+                      <a href="">الرئيسية</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
 <!-- Footer End -->
 

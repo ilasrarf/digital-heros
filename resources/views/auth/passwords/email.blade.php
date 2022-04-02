@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
+<div class="login container p-4 my-md-5" dir="rtl">
+    <div class="row justify-content-center" style="margin-top: 35px">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+                <div class="card-header text-dark text-center fw-bold">{{ __('إعادة تعيين كلمة المرور') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -17,11 +17,10 @@
                     <form method="POST" action="{{ route('password.email') }}">
                         @csrf
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                        <div class="row justify-content-center mb-3">
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                <input id="email" type="email" class="form-control text-center @error('email') is-invalid @enderror" name="email" placeholder="{{ __('الإيمايل ديالك') }}" value="{{ old('email') }}" required autocomplete="email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -31,10 +30,10 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
+                        <div class="row">
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary d-flex justify-content-center align-items-center" style="width: 100px; height: 30px; border-radius: 5px;">
+                                    {{ __('أرسل') }}
                                 </button>
                             </div>
                         </div>

@@ -61,7 +61,7 @@
     z-index: 5;
     border: 2px solid #fff;
     background-color: #fff;
-    left: -40px;
+    right: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@
     height: 90px;
     width: 4px;
     background-color: #fff;
-    left: -25px;
+    right: -25px;
     top: -70px
 }
 
@@ -182,7 +182,7 @@ input[type="password"] {
     padding: 5px;
     box-sizing: border-box;
     transition: all 0.5s;
-    padding-right: 30px
+    padding-left: 30px
 }
 
 .input_text select {
@@ -228,7 +228,7 @@ input[type=number]::-webkit-outer-spin-button {
 .fa-eye-slash {
     position: absolute;
     top: 14px;
-    right: 7px;
+    left: 7px;
     cursor: pointer;
     transition: all 0.5s;
     color: #b1b1b1
@@ -237,7 +237,7 @@ input[type=number]::-webkit-outer-spin-button {
 .fa-eye {
     position: absolute;
     top: 14px;
-    right: 7px;
+    left: 7px;
     cursor: pointer;
     transition: all 0.5s;
     color: #b1b1b1
@@ -246,7 +246,7 @@ input[type=number]::-webkit-outer-spin-button {
 .fa-eye {
     position: absolute;
     top: 14px;
-    right: 7px;
+    left: 7px;
     cursor: pointer;
     transition: all 0.5s;
     color: #b1b1b1
@@ -256,7 +256,7 @@ input[type=number]::-webkit-outer-spin-button {
     pointer-events: none;
     position: absolute;
     top: 14px;
-    left: 5px;
+    right: 5px;
     font-size: 14px;
     color: #b1b1b1;
     transition: all 0.5s
@@ -269,7 +269,7 @@ input[type=number]::-webkit-outer-spin-button {
 .input_text input:focus~label,
 .input_text input:valid~label {
     top: -20px;
-    left: 0;
+    right: 0;
     color: #6f42c1;
     font-weight: 700
 }
@@ -485,7 +485,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footers .btn.btn-social {
-  margin-right: 5px;
+  margin-left: 5px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -505,7 +505,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: block;
   margin-bottom: 10px;
   padding: 0;
-  text-align: left;
+  text-align: right;
   color: var(--light);
   font-weight: normal;
   transition: .3s;
@@ -516,7 +516,7 @@ input[type=number]::-webkit-outer-spin-button {
   content: "\f105";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .footers .btn.btn-link:hover {
@@ -536,15 +536,15 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footers .footers-menu a {
-  margin-right: 15px;
-  padding-right: 15px;
-  border-right: 1px solid rgba(255, 255, 255, .1);
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 1px solid rgba(255, 255, 255, .1);
 }
 
 .footers .footers-menu a:last-child {
-  margin-right: 0;
-  padding-right: 0;
-  border-right: none;
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
 }
 
 .footers .copyright a:hover,

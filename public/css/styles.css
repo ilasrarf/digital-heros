@@ -12,7 +12,7 @@
 }
 
 .ch{
-    direction: rtl;
+    direction: ltr;
     font-family: 'Bebas Neue', cursive;
     font-size: x-large;
     display: flex;
@@ -22,7 +22,7 @@
     align-items: center;
     color: #fff;
     cursor: pointer;
-    border-radius: 0 12px 12px 0;
+    border-radius: 12px 0 0 12px;
 }
 
 .ch1{
