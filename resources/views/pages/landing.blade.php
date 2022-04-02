@@ -122,8 +122,8 @@
         <div class="d-lg-flex align-items-center w-75">
             <div class="parent flex-shrink-0">
                 <div class="ch ch1" id="1" onclick="content(1)">
-                    <i class="ms-4 bi bi-x-diamond-fill"></i>
                     <p class="me-2 mt-3">كيفاش</p>
+                    <i class="ms-4 bi bi-x-diamond-fill"></i>
                 </div>
                 <div class="ch" id="2" onclick="content(2)">
                     <i class="ms-4 bi bi-x-diamond-fill"></i>
