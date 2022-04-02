@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
-                        <a href="{{route('homes')}}" class="nav-item nav-link">تواصل معنا</a>
+                        <a href="#contact" class="nav-item nav-link">تواصل معنا</a>
                     </div>
                     <a href="{{ route('login') }}" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block">دخول</a>
                     @if (Route::has('register'))
@@ -137,8 +137,8 @@
             <div class="mx-5">
                 <h2 style="color: #fba504;" id="head">كيفاش</h2>
                 <hr style="color: #6222CC; height: 10px; border-radius: 15px;">   
-                <h4>كيفاش نشأ أبطال الديجتال</h4>
-                <h5>أستاذ المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو .</h5>
+                <h4 id="headd">كيفاش نشأ نادي أبطال الديجتال</h4>
+                <h5 id="headdd">أستاذ المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو .</h5>
             </div>
         </div>
     </div>
@@ -158,8 +158,7 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-search fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">SEO Optimization</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="m-0 fs-3 fw-bold">إدماج التلاميذ في عالم الديجيتال</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -223,7 +222,7 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="team-item bg-light rounded">
                     <div class="text-center border-bottom p-4">
-                        <img class="img-fluid rounded-circle mb-4" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid rounded-circle mb-4" src="img/oop1.png" style="width: 130px;" alt="">
                         <h5>Test Name</h5>
                         <span>CEO & Founder</span>
                     </div>
@@ -238,7 +237,7 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="team-item bg-light rounded">
                     <div class="text-center border-bottom p-4">
-                        <img class="img-fluid rounded-circle mb-4" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid rounded-circle mb-4" src="img/oop.png" style="width: 130px;" alt="">
                         <h5>Test Name</h5>
                         <span>Web Designer</span>
                     </div>
@@ -253,7 +252,7 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="team-item bg-light rounded">
                     <div class="text-center border-bottom p-4">
-                        <img class="img-fluid rounded-circle mb-4" src="img/testimonial-3.jpg" alt="">
+                        <img class="img-fluid rounded-circle mb-4" src="img/oop2.png" style="width: 130px;" alt="">
                         <h5>Test Name</h5>
                         <span>SEO Expert</span>
                     </div>
@@ -279,18 +278,21 @@
         </div>
 
 		<article class="postcard dark blue">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
-			</a>
+			<p class="postcard__img_link">
+				<img class="postcard__img" src="img/blog1.jpg" alt="Image Title" />
+            </p>
 			<div class="postcard__text">
-				<h1 class="postcard__title blue"><a href="#">Podcast Title</a></h1>
+				<h2 class="postcard__title blue"><p>صحح المفاهيم الخاطئة لي عندك حول مجال التعلم و العمل فالبرجمة...
+                </p></h2>
 				<div class="postcard__subtitle small">
 					<time datetime="2020-05-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+						<i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2020
 					</time>
 				</div>
 				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+				<div class="postcard__preview-txt">
+                    حقيقة كتصدع بزاف ديال الناس فراسهم قبل ما يدخلوا لهاد الدومين واش غادي نخدم أو لا غير كنضيع وقتي وللأسف بزاف منهم كيوقفوا فاول حاجز كيتعرضولو فهاد المقال غادي نشوفوا بعض المفاهيم الخاطئة بخصوص البرمجة.
+                </div>
 				{{-- <ul class="postcard__tagbox">
 					<li class="tag__item play blue">
 						<a href="#"><i class="fas fa-play mr-2"></i> Play Episode</a>
@@ -298,19 +300,22 @@
 				</ul> --}}
 			</div>
 		</article>
-		<article class="postcard dark red">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />	
-			</a>
+		<article dir="rtl" class="postcard dark red">
+			<p class="postcard__img_link" >
+				<img class="postcard__img" src="img/blog2.jpg" alt="Image Title" />	
+            </p>
 			<div class="postcard__text">
-				<h1 class="postcard__title red"><a href="#">Podcast Title</a></h1>
+				<h1 class="postcard__title red"><p>Développeur mobile, le créateur d’application sur le bout des doigts
+                </p></h1>
 				<div class="postcard__subtitle small">
 					<time datetime="2020-05-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+						<i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2020
 					</time>
 				</div>
 				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+				<div class="postcard__preview-txt">
+                    Avec la démocratisation des Smartphones et des tablettes et l’utilisation massive d'applications, les développeurs mobile ont de quoi bien travailler ! Ce métier a récemment fait son apparition et son nombre ne cesse de s’accroître, la demande d’applications étant toujours très forte.
+                </div>
 				{{-- <ul class="postcard__tagbox">
 					<li class="tag__item play red">
 						<a href="#"><i class="fas fa-play mr-2"></i> Play Episode</a>
@@ -318,19 +323,21 @@
 				</ul> --}}
 			</div>
 		</article>
-		<article class="postcard dark green">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="https://picsum.photos/500/501" alt="Image Title" />
-			</a>
+		<article dir="rtl" class="postcard dark green">
+			<p class="postcard__img_link" >
+				<img class="postcard__img" src="img/blog3.jpg" alt="Image Title" />
+            </p>
 			<div class="postcard__text">
-				<h1 class="postcard__title green"><a href="#">Podcast Title</a></h1>
+				<h1 class="postcard__title green"><p>POURQUOI TOUT LE MONDE DEVRAIT APPRENDRE LA PROGRAMMATION
+                </p></h1>
 				<div class="postcard__subtitle small">
 					<time datetime="2020-05-25 12:00:00">
 						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
 					</time>
 				</div>
 				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+				<div class="postcard__preview-txt">Nous savons tous que la programmation est le point où les gens ont peur. On voit beaucoup d'écrits mais on ne comprend rien, Quand tu décides de l'apprendre tu trouves plein de cours et vous suivez avec eux les première, deuxième et troisième vidéos, vous ne comprenez rien, très nécessaire maintenant,
+                </div>
 				{{-- <ul class="postcard__tagbox">
 					<li class="tag__item play green">
 						<a href=""><i class="fas fa-play mr-2"></i>Play Episode</a>
@@ -339,7 +346,9 @@
 			</div>
 		</article>
 	</div>
-    <a href="{{route('blogs.index')}}" class="btn btn-warning">المزيد...</a>
+    <div class="d-flex justify-content-center">
+        <a href="{{route('blogs.index')}}" style="height: 40px; width: 85px; border-radius: 5px" class="btn btn-warning fw-bold" >المزيد...</a>
+    </div>
 </section>
 <!-- Feature End -->
 
@@ -388,29 +397,30 @@
                     <div class="col-lg-7">
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
                             
-                            <form>
+                            <form action="{{route('contact.store')}}" method="POST">
+                                @csrf
                                 <div class="row g-3 text-action">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <input type="text" name="fullname" class="form-control" id="name" placeholder="Your Name">
                                             <label class="text-dark" for="name" dir="rtl">اسم المستخدم</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="الإيمايل ديالك">
+                                            <input type="email" name="email" class="form-control" id="email" placeholder="الإيمايل ديالك">
                                             <label class="text-dark" for="email">الإيمايل ديالك</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="الموضوع">
+                                            <input type="text" name="description" class="form-control" id="subject" placeholder="الموضوع">
                                             <label class="text-dark" for="subject">الموضوع</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="رسالة" id="message" style="height: 150px"></textarea>
+                                            <textarea class="form-control" name="message" placeholder="رسالة" id="message" style="height: 150px"></textarea>
                                             <label class="text-dark" for="message">رسالة</label>
                                         </div>
                                     </div>
@@ -446,8 +456,8 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a class="btn btn-link text-end" href="#"> شكون حنا</a>
-                        <a class="btn btn-link text-end" href="contact.html"> تواصل معنا</a>
+                        <a class="btn btn-link text-end" href="{{route('homes')}}"> شكون حنا</a>
+                        <a class="btn btn-link text-end" href="{{route('contact.create')}}"> تواصل معنا</a>
                         <a class="btn btn-link text-end" href="">سياسة الخصوصية</a>
                         <a class="btn btn-link text-end" href="">الشروط والأحكام</a>
                     </div>
@@ -467,14 +477,14 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Degital</a>, جميع الحقوق محفوظة. 
+                            &copy; <a class="border-bottom" href="{{route('homes')}}">Degital</a>, جميع الحقوق محفوظة. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							<!-- من تصميم <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
                         </div>
                         <div class="col-md-6 text-center text-md-end" dir="ltr">
                             <div class="footer-menu">
-                                <a href="">الرئيسية</a>
+                                <a href="{{route('homes')}}">الرئيسية</a>
                                 <a href="">Cookies</a>
                                 <a href="">مساعدة</a>
                                 <a href="">FQAs</a>

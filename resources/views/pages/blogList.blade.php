@@ -63,7 +63,7 @@
                         <a href="{{route('homes')}}" class="nav-item nav-link active">الرئيسية</a>
                         <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
                         <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
-                        <a href="{{route('homes')}}" class="nav-item nav-link">تواصل معنا</a>
+                        <a href="{{route('contact.create')}}" class="nav-item nav-link">تواصل معنا</a>
                     </div>
                     <a href="{{ route('login') }}" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block">دخول</a>
                     @if (Route::has('register'))
@@ -71,13 +71,13 @@
                     @endif
                 </div>
             </nav>
-  <!-- End Hero -->
-  <section id="hero" style="padding: 65px 0 0 0;"></section>
+    <!-- End Hero -->
+    <section id="hero" style="padding: 65px 0 0 0;"></section>
     <!-- Navbar & Hero End -->
     <!-- ////////////////////////////////////////////////// -->
 
     <div class="row m-5">
-      <div class="leftcolumn">
+        <div class="leftcolumn">
             @foreach ($posts as $post)
             <div class="card">
                 <img src="{{Voyager::image($post->image)}}" style="height: 500px;">
@@ -85,29 +85,29 @@
                 <h5>{{$post->excerpt}}</h5>
                 <a href="{{route('posts.show', $post->id)}}" dir="ltr"><strong>...المزيد</strong></a>
             </div>
-        @endforeach
-      </div>
-      <div class="rightcolumn">
-        <div class="card">
-          <img width="40%" class="d-block m-auto" src="img/أبطال الديجيتال.png" alt="Logo">
-          <strong class="text-muted text-center my-4">أبطال الديجيتال  هو نادي لاكتشاف المواهب المعلوماتية و تطويرها وكيحرص على ادماج الشباب في عالم الديجيتال </strong>
+            @endforeach
         </div>
-        <div class="card">
-          <h3>Popular Post</h3>
-          <div class="text-dark"><img style="width: 20%;" src="img/hero-bg.jpg" alt=""> <a href="#">hhhhhhhhh</a></div><br>
-          <div class="text-dark"><img style="width: 20%;" src="img/hero-bg.jpg" alt=""> <a href="">hhhhhhhh</a></div><br>
-          <div class="text-dark"><img style="width: 20%;" src="img/hero-bg.jpg" alt=""> <a href="">hhhhhhhhhh</a></div>
+        <div class="rightcolumn">
+            <div class="card">
+                <img width="40%" class="d-block m-auto" src="img/أبطال الديجيتال.png" alt="Logo">
+                <strong class="text-muted text-center my-4">أبطال الديجيتال  هو نادي لاكتشاف المواهب المعلوماتية و تطويرها وكيحرص على ادماج الشباب في عالم الديجيتال </strong>
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="text-dark"><img style="width: 20%;" src="{{ Voyager::image($postt->image)}}" alt=""> <a href="#">{{$postt->title}}</a></div><br>
+                <div class="text-dark"><img style="width: 20%;" src="{{ Voyager::image($posttt->image)}}" alt=""> <a href="">{{$posttt->title}}</a></div><br>
+                <div class="text-dark"><img style="width: 20%;" src="{{ Voyager::image($postttt->image)}}" alt=""> <a href="">{{$postttt->title}}</a></div>
+            </div>
         </div>
-      </div>
     </div>
-  
+
     <!-- ////////////////////////////////////////////////// -->
 
 
 
-  <!-- Footer Start -->
+    <!-- Footer Start -->
         
-  <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s" dir="rtl">
+    <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s" dir="rtl">
     <div class="container py-5 px-lg-5">
         <div class="row g-5">
             <div class="col-md-4 col-lg-3">
@@ -124,8 +124,8 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                <a class="btn btn-link text-end" href="index.html"> شكون حنا</a>
-                <a class="btn btn-link text-end" href="contact.html"> تواصل معنا</a>
+                <a class="btn btn-link text-end" href="{{route('homes')}}"> شكون حنا</a>
+                <a class="btn btn-link text-end" href="{{route('contact.create')}}"> تواصل معنا</a>
                 <a class="btn btn-link text-end" href="">سياسة الخصوصية</a>
                 <a class="btn btn-link text-end" href="">الشروط والأحكام</a>
             </div>
@@ -145,14 +145,14 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                  &copy; <a class="border-bottom" href="index.html">Degital</a>, جميع الحقوق محفوظة. 
+                    &copy; <a class="border-bottom" href="index.html">Degital</a>, جميع الحقوق محفوظة. 
                     
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
                 </div>
                 <div class="col-md-6 text-center text-md-end" dir="ltr">
                     <div class="footer-menu">
-                        <a href="">الرئيسية</a>
+                        <a href="{{route('homes')}}">الرئيسية</a>
                         <a href="">Cookies</a>
                         <a href="">مساعدة</a>
                         <a href="">FQAs</a>

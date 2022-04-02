@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Auth\AuthController;
 
 
@@ -26,10 +27,16 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::get('blogs', [PostController::class , 'index'])->name('blogs.index');
 
-Route::get('posts/{id}', [PostController::class, 'show'])->name('posts.show');
+Route::get('blogs/{id}', [PostController::class, 'show'])->name('posts.show');
 
 Auth::routes();
 Route::post('register', [AuthController::class, 'register'])->name('user.register');
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('contact', [ContactController::class , 'create'])->name('contact.create');
+
+Route::post('contact', [ContactController::class , 'store'])->name('contact.store');
+
+
