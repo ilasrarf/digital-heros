@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700&display=swap);
 /********** Template CSS **********/
 :root {
   --primary: #6222CC;
@@ -5,8 +6,11 @@
   --light: #F6F4F9;
   --dark: #04000B;
 }
-
+*{
+  font-family: changa,Arial,sans-serif;
+}
 body {
+  
 background-image: url("../img/map.png") !important;
 background-color: #827498;
 background-repeat: no-repeat;
@@ -108,7 +112,7 @@ h6,
   position: relative;
   margin-left: 25px;
   padding: 10px;
-  font-family: 'Jost', sans-serif;
+  font-family: changa,Arial,sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: var(--light) !important;
@@ -629,7 +633,7 @@ h6,
   font-size: 24px;
 }
 #hero .btn-get-started {
-  font-family: "Montserrat", sans-serif;
+  font-family: changa,Arial,sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;

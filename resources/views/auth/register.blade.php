@@ -378,9 +378,9 @@
             <div class="row g-5">
                 <div class="col-md-4 col-lg-3">
                     <p class="section-title text-white h5 mb-4"><span></span><strong>العنوان</strong></p>
-                    <p><i class="fa fa-map-marker-alt me-3"></i> الثانوية الإعدادية علال الفاسي</p>
-                    <p><i class="fa fa-phone-alt me-3"></i > 538 885 607 212+</p>
-                    <p><i class="fa fa-envelope me-3"></i> info@example.com</p>
+                    <p><i class="fa fa-map-marker-alt me-1"></i> الثانوية الإعدادية علال الفاسي</p>
+                    <p><i class="fa fa-phone-alt me-1"></i > 538 885 607 212+</p>
+                    <p><i class="fa fa-envelope me-1"></i> info@example.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -389,17 +389,17 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <p class="section-title text-white h5 mb-4">رابط سريع<span></span></p>
-                    <a class="btn btn-link" href="{{route('homes')}}"> شكون حنا</a>
-                    <a class="btn btn-link" href="{{route('contact.create')}}"> تواصل معنا</a>
-                    <a class="btn btn-link" href="">سياسة الخصوصية</a>
-                    <a class="btn btn-link" href="">الشروط والأحكام</a>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <p class="section-title text-white h5 mb-4"><span></span><strong>نادي أبطال الديجيتال</strong></p>
-                    <p>الهدف هو اننا نحاولو نكتشفو المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</p>
-                    
-                </div>
+                  <p class="section-title text-white h5 mb-4"><span></span><strong>رابط سريع</strong></p>
+                  <a class="btn btn-link" href="{{route('homes')}}"> شكون حنا</a>
+                  <a class="btn btn-link" href="{{route('contact.create')}}"> تواصل معنا</a>
+                  <a class="btn btn-link" href="">سياسة الخصوصية</a>
+                  <a class="btn btn-link" href="">الشروط والأحكام</a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                  <p class="section-title text-white mb-4"><span></span><strong>نادي أبطال الديجيتال</strong></p>
+                  <p>الهدف هو اننا نحاولو نكتشفو المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</p>
+                  
+              </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="row g-3 my-5">
                             <img class="img-fluid" src="img/أبطال الديجيتال.png" alt="Image">

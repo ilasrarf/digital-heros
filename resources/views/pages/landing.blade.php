@@ -61,9 +61,9 @@
                     <div class="navbar-nav mx-auto py-0">
                         <a href="{{route('homes')}}" class="nav-item nav-link active">الرئيسية</a>
                         <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
-                        <div class="nav-item dropdown text-end">
+                        <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">شكون حنا</a>
-                            <div class="dropdown-menu m-0 text-end">
+                            <div class="dropdown-menu m-0">
                                 <a href="#about" class="dropdown-item">شكون حنا</a>
                                 <a href="#الأهداف" class="dropdown-item">الأهداف</a>
                                 <a href="#الأعضاء" class="dropdown-item">الأعضاء</a>
@@ -84,9 +84,9 @@
                 <div class="container px-lg-5">
                     <div class="row align-items-end">
                         <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white text-center mb-4 animated slideInDown">نادي أبطال الديجيتال <br><p class="text-secondary" style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> علال الفاسي</p></h1>
+                            <h1 class="text-white text-center mb-4 animated slideInDown">نادي أبطال الديجيتال <br><p class="text-secondary" style="font-size: 30px; font-family: changa,Arial,sans-serif;"> علال الفاسي</p></h1>
                             <h5 class="text-white h5b-3 text-center animated slideInDown">موقع إلكتروني لواحد الكلوب بثانوية علال الفاسي</h5>
-                            <div class="d-grid gap-2 col-4 mx-auto">
+                            <div class="d-grid gap-2 col-5 mx-auto">
                             <a href="{{ route('register') }}" class="btn btn-secondary py-sm-1 px-sm-5 rounded-3 animated slideInLeft">نخارط معانا</a>
                         </div>
                         </div>
@@ -122,15 +122,15 @@
         <div class="d-lg-flex align-items-center w-75">
             <div class="parent flex-shrink-0">
                 <div class="ch ch1" id="1" onclick="content(1)">
-                    <i class="ms-4 bi bi-x-diamond-fill"></i>
+                    {{-- <i class="ms-4 bi bi-x-diamond-fill"></i> --}}
                     <p class="me-2 mt-3">كيفاش</p>
                 </div>
                 <div class="ch" id="2" onclick="content(2)">
-                    <i class="ms-4 bi bi-x-diamond-fill"></i>
+                    {{-- <i class="ms-4 bi bi-x-diamond-fill"></i> --}}
                     <p class="me-2 mt-3">علاش</p>
                 </div>
                 <div class="ch" id="3" onclick="content(3)">
-                    <i class="ms-4 bi bi-x-diamond-fill"></i>
+                    {{-- <i class="ms-4 bi bi-x-diamond-fill"></i> --}}
                     <p class="me-2 mt-3">شنو الهدف</p>
                 </div>
             </div>
@@ -439,9 +439,9 @@
                 <div class="row g-5">
                     <div class="col-md-4 col-lg-3">
                         <p class="section-title text-white h5 mb-4"><span></span><strong>العنوان</strong></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i> الثانوية الإعدادية علال الفاسي</p>
-                        <p><i class="fa fa-phone-alt me-3"></i > 538 885 607 212+</p>
-                        <p><i class="fa fa-envelope me-3"></i> info@example.com</p>
+                        <p><i class="fa fa-map-marker-alt me-1"></i> الثانوية الإعدادية علال الفاسي</p>
+                        <p><i class="fa fa-phone-alt me-1"></i > 538 885 607 212+</p>
+                        <p><i class="fa fa-envelope me-1"></i> info@example.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -450,14 +450,14 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">رابط سريع<span></span></p>
+                        <p class="section-title text-white h5 mb-4"><span></span><strong>رابط سريع</strong></p>
                         <a class="btn btn-link" href="{{route('homes')}}"> شكون حنا</a>
                         <a class="btn btn-link" href="{{route('contact.create')}}"> تواصل معنا</a>
                         <a class="btn btn-link" href="">سياسة الخصوصية</a>
                         <a class="btn btn-link" href="">الشروط والأحكام</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4"><span></span><strong>نادي أبطال الديجيتال</strong></p>
+                        <p class="section-title text-white mb-4"><span></span><strong>نادي أبطال الديجيتال</strong></p>
                         <p>الهدف هو اننا نحاولو نكتشفو المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</p>
                         
                     </div>

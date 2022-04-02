@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shizuru&family=Ubuntu:wght@300&family=ZCOOL+QingKe+HuangYou&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: changa,Arial,sans-serif;
+} 
 .parent{
     width: 300px;
     height: 400px;
@@ -13,7 +17,7 @@
 
 .ch{
     direction: ltr;
-    font-family: 'Bebas Neue', cursive;
+    font-family: changa,Arial,sans-serif;
     font-size: x-large;
     display: flex;
     width: 280px;

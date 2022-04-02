@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700&display=swap');
 
+*{
+  font-family: changa,Arial,sans-serif;
+}
 .box {
   position: relative;
   top: 0;
