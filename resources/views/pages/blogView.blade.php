@@ -64,7 +64,7 @@
                         <a href="{{route('homes')}}" class="nav-item nav-link active">الرئيسية</a>
                         <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
                         <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
-                        <a href="{{route('homes')}}" class="nav-item nav-link">تواصل معنا</a>
+                        <a href="{{route('contact.create')}}" class="nav-item nav-link">تواصل معنا</a>
                     </div>
                     <a href="{{ route('login') }}" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block">دخول</a>
                     @if (Route::has('register'))
@@ -85,9 +85,9 @@
         <div>
             <h2 class="mt-4">{{$post->title}}</h2>
             <div class="d-flex justify-content-center align-items-center mt-4 flex-column flex-md-row">
-                <h5 class="text-muted mx-5"><i class="bi bi-person"></i> ilyass</h5>
-                <h5 class="text-muted mx-5"><i class="bi bi-eye"></i>{{$post->nb_visit}}</h5>
-                <h5 class="text-muted mx-3"><i class="bi bi-calendar-event"></i> <span dir="ltr">{{$post->created_at->diffForHumans()}}</span></h5>
+                <h5 class="text-muted mx-5"><i class="bi bi-person"></i> </h5>
+                <h5 class="text-muted mx-5"><i class="bi bi-eye"></i> {{$post->nb_visit}}</h5>
+                <h5 class="text-muted mx-3"><i class="bi bi-calendar-event"></i> <span dir="ltr"> {{$post->created_at->diffForHumans()}}</span></h5>
             </div>
             <div class="d-flex justify-content-center mb-4">
                 <hr width="40%" class="text-dark">
@@ -102,9 +102,9 @@
         </div>
         <div class="card">
           <h3>Popular Post</h3>
-          <div class="text-dark"><img style="width: 20%;" src="/img/hero-bg.jpg" alt=""> <a href="#">hhhhhhhhh</a></div><br>
-          <div class="text-dark"><img style="width: 20%;" src="/img/hero-bg.jpg" alt=""> <a href="">hhhhhhhh</a></div><br>
-          <div class="text-dark"><img style="width: 20%;" src="/img/hero-bg.jpg" alt=""> <a href="">hhhhhhhhhh</a></div>
+          <div class="text-dark"><img style="width: 20%;" src="{{ Voyager::image($postt->image)}}" alt=""> <a href="#">{{$postt->title}}</a></div><br>
+          <div class="text-dark"><img style="width: 20%;" src="{{ Voyager::image($posttt->image)}}" alt=""> <a href="">{{$posttt->title}}</a></div><br>
+          <div class="text-dark"><img style="width: 20%;" src="{{ Voyager::image($postttt->image)}}" alt=""> <a href="">{{$postttt->title}}</a></div>
         </div>
       </div>
     </div>
@@ -132,8 +132,8 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                <a class="btn btn-link text-end" href="index.html"> شكون حنا</a>
-                <a class="btn btn-link text-end" href="contact.html"> تواصل معنا</a>
+                <a class="btn btn-link text-end" href="{{route('homes')}}"> شكون حنا</a>
+                <a class="btn btn-link text-end" href="{{route('contact.create')}}"> تواصل معنا</a>
                 <a class="btn btn-link text-end" href="">سياسة الخصوصية</a>
                 <a class="btn btn-link text-end" href="">الشروط والأحكام</a>
             </div>
@@ -153,14 +153,14 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                  &copy; <a class="border-bottom" href="index.html">Degital</a>, جميع الحقوق محفوظة. 
+                  &copy; <a class="border-bottom" href="{{route('homes')}}">Degital</a>, جميع الحقوق محفوظة. 
                     
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
                 </div>
                 <div class="col-md-6 text-center text-md-end" dir="ltr">
                     <div class="footer-menu">
-                        <a href="">الرئيسية</a>
+                        <a href="{{route('homes')}}">الرئيسية</a>
                         <a href="">Cookies</a>
                         <a href="">مساعدة</a>
                         <a href="">FQAs</a>

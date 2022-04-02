@@ -80,7 +80,7 @@
                   <a href="{{route('homes')}}" class="nav-item nav-link active">الرئيسية</a>
                   <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
                   <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
-                  <a href="{{route('homes')}}" class="nav-item nav-link">تواصل معنا</a>
+                  <a href="{{route('contact.create')}}" class="nav-item nav-link">تواصل معنا</a>
               </div>
               <a href="{{ route('login') }}" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block"
               >دخول</a
@@ -98,7 +98,7 @@
         <div class="container" id="register">
           <div class="card">
             <div class="form">
-              <div class="left-side" dir="ltr">
+              <div class="left-side">
                 <ul class="progres_bar">
                   <li>المعلومات الشخصية</li>
                   <li>المعلومات الدراسية</li>
@@ -379,7 +379,7 @@
                 <div class="col-md-4 col-lg-3">
                     <p class="section-title text-white h5 mb-4"><span></span><strong>العنوان</strong></p>
                     <p><i class="fa fa-map-marker-alt me-3"></i> الثانوية الإعدادية علال الفاسي</p>
-                    <p><i class="fa fa-phone-alt me-3"></i > 09876 543 212+</p>
+                    <p><i class="fa fa-phone-alt me-3"></i > 538 885 607 212+</p>
                     <p><i class="fa fa-envelope me-3"></i> info@example.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
@@ -390,8 +390,8 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <p class="section-title text-white h5 mb-4">رابط سريع<span></span></p>
-                    <a class="btn btn-link" href="#"> شكون حنا</a>
-                    <a class="btn btn-link" href="contact.html"> تواصل معنا</a>
+                    <a class="btn btn-link" href="{{route('homes')}}"> شكون حنا</a>
+                    <a class="btn btn-link" href="{{route('contact.create')}}"> تواصل معنا</a>
                     <a class="btn btn-link" href="">سياسة الخصوصية</a>
                     <a class="btn btn-link" href="">الشروط والأحكام</a>
                 </div>
@@ -411,17 +411,17 @@
               <div class="copyright">
                   <div class="row">
                       <div class="col-md-5 text-center text-md-end mb-3 mb-md-0">
-                          &copy; <a class="border-bottom" href="index.html">Degital</a>, جميع الحقوق محفوظة. 
+                          &copy; <a class="border-bottom" href="{{route('homes')}}">Degital</a>, جميع الحقوق محفوظة. 
                           
                           <!--/*** This template is free as long as you keep the footers author’s credit link/attribution link/backlink. If you'd like to use the template without the footers author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                           <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
                       </div>
                       <div class="col-md-4 text-center text-md-star">
                           <div class="footers-menu">
+                            <a href="{{route('homes')}}">الرئيسية</a>
+                            <a href="">Cookies</a>
+                            <a href="">مساعدة</a>
                               <a href="">FQAs</a>
-                              <a href="">مساعدة</a>
-                              <a href="">Cookies</a>
-                              <a href="">الرئيسية</a>
                           </div>
                       </div>
                   </div>

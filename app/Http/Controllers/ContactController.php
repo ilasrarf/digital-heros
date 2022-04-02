@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
+use App\Models\Contact;
 use App\Models\User;
 use Illuminate\Http\Request;
-use TCG\Voyager\Models\Category;
 
-class PostController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,13 +15,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-
-        $postt = Post::find(1);
-        $posttt = Post::find(2);
-        $postttt = Post::find(3);
-
-        return view('pages.blogList', compact('posts', 'postt', 'posttt', 'postttt'));
+        //
     }
 
     /**
@@ -32,7 +25,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.contact');
     }
 
     /**
@@ -43,42 +36,36 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'fullname' => 'required',
+            'email' => 'required',
+            'description' => 'required',
+            'message' => 'required'
+        ]);
+
+        Contact::create($request->all());
+
+        return view('pages.landing');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Contact $contact)
     {
-        $post = Post::find($id);
-        // $category = Category::where('id', $post->category_id)->pluck('name');
-
-        if (session()->get('viewed') != $post->id) {
-            session()->put('viewed', $post->id);
-            $post->nb_visit++;
-            $post->save();
-        }
-
-        // $user = User::where('id', $post->author->id)->first();
-
-        $postt = Post::find(1);
-        $posttt = Post::find(2);
-        $postttt = Post::find(3);
-
-        return view('pages.blogView', compact('post', 'postt', 'posttt', 'postttt'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function edit(Post $post)
+    public function edit(Contact $contact)
     {
         //
     }
@@ -87,10 +74,10 @@ class PostController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, Contact $contact)
     {
         //
     }
@@ -98,10 +85,10 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy(Contact $contact)
     {
         //
     }
