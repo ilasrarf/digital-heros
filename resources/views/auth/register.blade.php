@@ -299,7 +299,7 @@
                         </div>
                       </div>
                       <div class="input_div">
-                        <div class="input_text" dir="ltr">
+                        <div class="input_text">
                             <input id="password" type="password" class="pass_type @error('password') is-invalid @enderror" name="password" require required autocomplete="new-password">
                             <label for="password">{{ __('كلمة السر') }}</label>
                           <i class="fa fa-eye-slash password_eye"></i>
@@ -315,7 +315,7 @@
                         </div>
                         </div>
 
-                        <div class="input_text" dir="ltr">
+                        <div class="input_text">
                             <input id="password-confirm" type="password" class="confirm_pass_type" name="password_confirmation" require required autocomplete="new-password">
                             <label for="password-confirm" >{{ __('اعد كلمة السر') }}</label>
                           <i class="fa fa-eye-slash con_eye"></i>
