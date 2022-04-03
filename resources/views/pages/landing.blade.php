@@ -484,6 +484,12 @@
                                 <a href="">مساعدة</a>
                                 <a href="">FQAs</a>
                             </div>
+                            <div class="col-md-6 mt-2">
+                                <strong>Réalisé par </strong>
+                                <a href="https://ajicod.com/">AJCOD</a>
+                                <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
+
+                            </div>
                         </div>
                     </div>
                 </div>
