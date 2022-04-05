@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DGital</title>
+    <title>الرئيسية</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- Favicons -->
+    <link href="img/أبطال الديجيتال.png" rel="icon">
+    <link href="img/أبطال الديجيتال.png" rel="apple-touch-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,10 +20,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Favicons -->
-    <link href="img/أبطال الديجيتال.png" rel="icon">
-    <link href="img/أبطال الديجيتال.png" rel="apple-touch-icon">
-
+    
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -481,7 +479,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-5 text-center text-md-end mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Degital</a>, جميع الحقوق محفوظة.
+                            &copy; <a class="border-bottom" href="#">Digital</a>, جميع الحقوق محفوظة.
 
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             <!-- من تصميم <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
@@ -491,11 +489,10 @@
                                 <a href="#">الرئيسية</a>
                                 <a href="">Cookies</a>
                                 <a href="">مساعدة</a>
-                                <a href="">FQAs</a>
                             </div>
                             <div class="col-md-6 mt-2">
                                 <strong>Réalisé par </strong>
-                                <a href="https://ajicod.com/">AJCOD</a>
+                                <a href="https://ajicod.com/">AJICOD</a>
                                 <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
 
                             </div>

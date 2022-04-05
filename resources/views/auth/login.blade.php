@@ -7,8 +7,9 @@
     <meta content="" name="keywords" />
     <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <!-- Favicons -->
+    <link href="img/أبطال الديجيتال.png" rel="icon">
+    <link href="img/أبطال الديجيتال.png" rel="apple-touch-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -207,7 +208,7 @@
       <div class="copyright">
           <div class="row">
               <div class="col-md-5 text-center text-md-end mb-3 mb-md-0">
-                  &copy; <a class="border-bottom" href="{{route('homes')}}">Degital</a>, جميع الحقوق محفوظة. 
+                  &copy; <a class="border-bottom" href="{{route('homes')}}">Digital</a>, جميع الحقوق محفوظة. 
                   
                   <!--/*** This template is free as long as you keep the footers author’s credit link/attribution link/backlink. If you'd like to use the template without the footers author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                   <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
@@ -217,11 +218,10 @@
                     <a href="{{route('homes')}}">الرئيسية</a>
                     <a href="">Cookies</a>
                     <a href="">مساعدة</a>
-                      <a href="">FQAs</a>
                   </div>
                   <div class="col-md-6 mt-2">
                     <strong>Réalisé par </strong>
-                    <a href="https://ajicod.com/">AJCOD</a>
+                    <a href="https://ajicod.com/">AJICOD</a>
                     <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
                 </div>
               </div>

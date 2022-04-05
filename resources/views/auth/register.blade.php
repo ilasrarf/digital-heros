@@ -7,8 +7,9 @@
     <meta content="" name="keywords" />
     <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <!-- Favicons -->
+    <link href="img/أبطال الديجيتال.png" rel="icon">
+    <link href="img/أبطال الديجيتال.png" rel="apple-touch-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -110,7 +111,7 @@
                           {{-- name & lastname --}}
                           <div class="input_div">
                               <div class="input_text">
-                                <input id="firstname" type="text" class="written_name @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname') }}" require required autocomplete="firstname" >
+                                <input id="firstname" type="text" class="written_name @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname') }}"  autocomplete="firstname" >
                                 <label for="firstname">{{ __('السمية') }}</label>
     
                                     <div class="col-md-6">
@@ -123,7 +124,7 @@
                                     </div>
                               </div>
                               <div class="input_text">
-                                <input id="lastname" class="form-control @error('الكنية') is-invalid @enderror" name="lastname" value="{{ old('الكنية') }}" require required autocomplete="lastname" type="text" required /> 
+                                <input id="lastname" class="form-control @error('الكنية') is-invalid @enderror" name="lastname" value="{{ old('الكنية') }}"  autocomplete="lastname" type="text" required /> 
                                 <label for="lastname">{{ __('الكنية') }}</label>
   
                                 <div class="col-md-6">
@@ -142,7 +143,7 @@
                             <div class="input_div">
                               
                               <div class="input_text">
-                                  <input id="tele" type="number" class="form-control @error('tele') is-invalid @enderror" name="tele" value="{{ old('tele') }}" require required autocomplete="tele">
+                                  <input id="tele" type="number" class="form-control @error('tele') is-invalid @enderror" name="tele" value="{{ old('tele') }}"  autocomplete="tele">
                                   <label for="tele">{{ __('0600000000*') }}</label>
   
                                   <div class="col-md-6">
@@ -157,7 +158,7 @@
                         {{-- end nb telephone --}}
                         <div class="mb-3">
                           <label for="date" class="form-label fw-bold" style="color:rgb(129, 33, 219)">تاريخ الإزدياد</label>
-                          <input class="chois" type="date" id="date" name="date" require required />
+                          <input class="chois" type="date" id="date" name="date"  />
                       </div>
   
                         {{-- Sexe --}}
@@ -180,7 +181,7 @@
   
                             <div class="mb-3">
                                 <label for="avatar" class="form-label fw-bold" style="color:rgb(129, 33, 219)">حمل صورة</label>
-                                <input class="chois" type="file" id="avatar" name="avatar" require required/>
+                                <input class="chois" type="file" id="avatar" name="avatar" />
                             </div>
   
                         {{-- end photo --}}
@@ -222,9 +223,9 @@
 
                         {{-- hadi dyala wach mokarar wla la  --}}
 
-                        <div class="d-flex flex-column mx-2">
-                          <label for="double_sur_classe" class="form-label text-dark mt-1 mx-5">مكرر في السنة 3 ؟</label>
-                          <div class="d-flex mx-5">
+                        <div class="d-flex justify-content-center mt-4">
+                          <label for="double_sur_classe" class="form-label fw-bold " style="color:rgb(129, 33, 219)">مكرر في السنة 3 ؟</label>
+                          <div class="d-flex ms-5">
                             <div class="form-check">
                               <input type="radio" name="double_sur_classe" id="flexRadioDefault1" value="1"/>
                               <label class="text-muted" for="flexRadioDefault1">نعم</label>
@@ -243,7 +244,7 @@
 
                      <div class="input_div">
                       <div class="input_text">
-                        <input type="text" require required name="classe"/>
+                        <input type="text" require required name="classe" />
                         <label>القسم</label>
                       </div>
                     </div>
@@ -405,7 +406,7 @@
               <div class="copyright">
                   <div class="row">
                       <div class="col-md-5 text-center text-md-end mb-3 mb-md-0">
-                          &copy; <a class="border-bottom" href="{{route('homes')}}">Degital</a>, جميع الحقوق محفوظة. 
+                          &copy; <a class="border-bottom" href="{{route('homes')}}">Digital</a>, جميع الحقوق محفوظة. 
                           
                           <!--/*** This template is free as long as you keep the footers author’s credit link/attribution link/backlink. If you'd like to use the template without the footers author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                           <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
@@ -415,11 +416,10 @@
                             <a href="{{route('homes')}}">الرئيسية</a>
                             <a href="">Cookies</a>
                             <a href="">مساعدة</a>
-                              <a href="">FQAs</a>
                           </div>
                           <div class="col-md-6 mt-2">
                             <strong>Réalisé par </strong>
-                            <a href="https://ajicod.com/">AJCOD</a>
+                            <a href="https://ajicod.com/">AJICOD</a>
                             <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
                         </div>
                       </div>

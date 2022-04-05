@@ -16,6 +16,10 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <!-- Favicons -->
+    <link href="/img/أبطال الديجيتال.png" rel="icon">
+    <link href="/img/أبطال الديجيتال.png" rel="apple-touch-icon">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Styles -->
@@ -58,7 +62,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-2 py-lg-0">
             <div class="container">
-                <a href="{{ url('/') }}" class="navbar-brand p-0">
+                <a href="{{route('homes')}}" class="navbar-brand p-0">
                     <img src="/img/أبطال الديجيتال.png" alt="Logo" />
                   </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

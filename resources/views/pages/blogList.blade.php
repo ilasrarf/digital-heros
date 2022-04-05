@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DGital</title>
+    <title>المقالات</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- Favicons -->
+    <link href="img/أبطال الديجيتال.png" rel="icon">
+    <link href="img/أبطال الديجيتال.png" rel="apple-touch-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,14 +77,14 @@
             <!-- Navbar & Hero End -->
             <!-- ////////////////////////////////////////////////// -->
 
-            <div class="row m-5">
+            <div class="row m-2">
                 <div class="leftcolumn">
                     @foreach ($posts as $post)
                     <div class="card">
-                        <img src="{{Voyager::image($post->image)}}" style="height: 500px;">
+                        <img src="{{Voyager::image($post->image)}}" style="height: 200px;">
                         <h2>{{$post->title}}</h2>
                         <h5>{{$post->excerpt}}</h5>
-                        <a href="{{ route('posts.show', $post->slug) }}" dir="ltr"><strong>...المزيد</strong></a>
+                        <a href="{{ route('posts.show', $post->slug) }}" dir="ltr"><strong class="btn btn-outline-warning "><i class="bi bi-chevron-left"></i>...المزيد</strong></a>
                     </div>
                     @endforeach
                 </div>
@@ -95,7 +96,7 @@
                     <div class="card">
                         <h3>Popular Post</h3>
                         @foreach($posts as $post)
-                        <div class="text-dark">
+                        <div class="text-dark p-1">
                             <img style="width: 20%;" src="{{ Voyager::image($post->image)}}" alt="">
                             <a href="{{ route('posts.show', $post->slug) }}">{{$post->title}}</a>
                         </div>
@@ -161,7 +162,7 @@
                     <div class="copyright">
                         <div class="row">
                             <div class="col-md-5 text-center text-md-end mb-3 mb-md-0">
-                                &copy; <a class="border-bottom" href="{{route('homes')}}">Degital</a>, جميع الحقوق محفوظة.
+                                &copy; <a class="border-bottom" href="{{route('homes')}}">Digital</a>, جميع الحقوق محفوظة.
 
                                 <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                                 <!-- من تصميم <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
@@ -171,11 +172,10 @@
                                     <a href="{{route('homes')}}">الرئيسية</a>
                                     <a href="">Cookies</a>
                                     <a href="">مساعدة</a>
-                                    <a href="">FQAs</a>
                                 </div>
                                 <div class="col-md-6 mt-2">
                                     <strong>Réalisé par </strong>
-                                    <a href="https://ajicod.com/">AJCOD</a>
+                                    <a href="https://ajicod.com/">AJICOD</a>
                                     <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
 
                                 </div>

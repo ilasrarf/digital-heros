@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DGital - Digital Agency HTML Template</title>
+    <title>تواصل معنا</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="/img/favicon.ico" rel="icon">
+    
+    <!-- Favicons -->
+    <link href="img/أبطال الديجيتال.png" rel="icon">
+    <link href="img/أبطال الديجيتال.png" rel="apple-touch-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,8 +76,8 @@
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb" class="text-white">
                                 <ol class="breadcrumb justify-content-center" >
-                                    <li class="breadcrumb-item text-white active" aria-current="page"><a class="text-white" href="#contact">Contact</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="{{route('homes')}}">الرئيسية </a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page"><a class="text-white" href="#contact">Contact</a></li>
                                 </ol>
                             </nav>
                         </div>
@@ -205,7 +206,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-5 text-center text-md-end mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="{{route('homes')}}">Degital</a>, جميع الحقوق محفوظة. 
+                            &copy; <a class="border-bottom" href="{{route('homes')}}">Digital</a>, جميع الحقوق محفوظة. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							<!-- من تصميم <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
@@ -215,11 +216,10 @@
                                 <a href="{{route('homes')}}">الرئيسية</a>
                                 <a href="">Cookies</a>
                                 <a href="">مساعدة</a>
-                                <a href="">FQAs</a>
                             </div>
                             <div class="col-md-6 mt-2">
                                 <strong>Réalisé par </strong>
-                                <a href="https://ajicod.com/">AJCOD</a>
+                                <a href="https://ajicod.com/">AJICOD</a>
                                 <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
 
                             </div>
