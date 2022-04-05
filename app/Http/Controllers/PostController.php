@@ -14,15 +14,23 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($slug = null)
     {
-        $posts = Post::all();
+        if ($slug) {
+            $category = Category::where('slug', $slug)->first();
+            $posts = Post::orderby('created_at', 'desc')
+                ->whereStatus('PUBLISHED')
+                ->whereCategoryId($category->id)
+                ->paginate(3);
+        } else {
+            $posts = Post::orderby('created_at', 'desc')
+                ->whereStatus('PUBLISHED')
+                ->paginate(3);
+        }
 
-        $postt = Post::find(1);
-        $posttt = Post::find(2);
-        $postttt = Post::find(3);
+        $categories = Category::all();
 
-        return view('pages.blogList', compact('posts', 'postt', 'posttt', 'postttt'));
+        return view('pages.blogList', compact('posts', 'categories'));
     }
 
     /**
@@ -52,10 +60,11 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $post = Post::find($id);
-        // $category = Category::where('id', $post->category_id)->pluck('name');
+        $post = Post::where('slug', $slug)
+            ->where('status', 'PUBLISHED')
+            ->first();
 
         if (session()->get('viewed') != $post->id) {
             session()->put('viewed', $post->id);
@@ -63,13 +72,20 @@ class PostController extends Controller
             $post->save();
         }
 
-        // $user = User::where('id', $post->author->id)->first();
+        $posts = Post::orderBy('created_at', 'desc')->whereStatus('PUBLISHED')->where('slug', '!=', $slug)->limit(3)->get();
+        $categories = Category::all();
 
-        $postt = Post::find(1);
-        $posttt = Post::find(2);
-        $postttt = Post::find(3);
+        $prev_id = Post::where('id', '<', $post->id)->max('id');
+        $next_id = Post::where('id', '>', $post->id)->min('id');
+        $prev_post = Post::find($prev_id, ['title', 'slug', 'image']);
+        $next_post = Post::find($next_id, ['title', 'slug', 'image']);
 
-        return view('pages.blogView', compact('post', 'postt', 'posttt', 'postttt'));
+        $user = User::where('id', $post->author_id)->first();
+
+
+        return view('pages.blogView', compact('post', 'categories', 'posts', 'user'))
+            ->with('prev_post', $prev_post)
+            ->with('next_post', $next_post);
     }
 
     /**

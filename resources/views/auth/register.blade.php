@@ -257,14 +257,14 @@
                         <input type="checkbox" class="mt-3" name="travail_de_pere" id="flexRadioDefault2" value="" />
                         <label class="text-muted mt-2" for="flexRadioDefault2">متوفي</label>
                         <div class="input_text">
-                          <input type="text" required name="travail_de_pere" /> <label>مهنة الأب</label>
+                          <input type="text" name="travail_de_pere" /> <label>مهنة الأب</label>
                         </div>
                       </div>
                       <div class="input_div">
                         <input type="checkbox" class="mt-3" name="travail_de_mere" id="flexRadioDefault2" />
                         <label class="text-muted mt-2" for="flexRadioDefault2">متوفية</label>
                         <div class="input_text">
-                          <input type="text" required name="travail_de_mere"  /> <label>مهنة الأم</label>
+                          <input type="text" name="travail_de_mere"  /> <label>مهنة الأم</label>
                         </div>
                         
                       </div>

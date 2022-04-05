@@ -1,0 +1,26 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/$1 [L,QSA]
+
+
+
+#disable directory browsing
+Options -Indexes
+
+#PROTECT env FILE
+<Files .env>
+order allow,deny
+Deny from all
+</Files>
+
+#PROTECT htaccess FILE
+<Files .htaccess>
+order allow,deny
+Deny from all
+</Files>
+
+#PROTECT composer FILE
+<Files composer.json>
+    Order allow,deny
+    Deny from all
+</Files>

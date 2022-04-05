@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
     <link href="/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/blog.css">
-    
+
 </head>
 
 <body dir="rtl">
@@ -67,136 +67,152 @@
                         <a href="{{route('contact.create')}}" class="nav-item nav-link">تواصل معنا</a>
                     </div>
                     <a href="{{ route('login') }}" class="b1 btn rounded-3 py-1 px-3 ms-2 d-lg-block">دخول</a>
-                        @if (Route::has('register'))
+                    @if (Route::has('register'))
                     <a href="{{ route('register') }}" class="b2 btn rounded-3 py-1 px-3 ms-3 d-lg-block" style="background-color: #FBA504;">التسجيل</a>
-                        @endif
+                    @endif
                 </div>
             </nav>
-  <!-- End Hero -->
-  <section id="hero" style="padding: 65px 0 0 0;"></section>
-    <!-- Navbar & Hero End -->
-    <!-- ////////////////////////////////////////////////// -->
+            <!-- End Hero -->
+            <section id="hero" style="padding: 65px 0 0 0;"></section>
+            <!-- Navbar & Hero End -->
+            <!-- ////////////////////////////////////////////////// -->
 
-    <div class="row m-5">
-      <div class="leftcolumn">
-        <div class="card">
-          <img src="{{ Voyager::image($post->image)}}" alt="..." style="height: 500px" >
-        </div>
-        <div>
-            <h2 class="mt-4">{{$post->title}}</h2>
-            <div class="d-flex justify-content-center align-items-center mt-4 flex-column flex-md-row">
-                <h5 class="text-muted mx-5"><i class="bi bi-person"></i> </h5>
-                <h5 class="text-muted mx-5"><i class="bi bi-eye"></i> {{$post->nb_visit}}</h5>
-                <h5 class="text-muted mx-3"><i class="bi bi-calendar-event"></i> <span dir="ltr"> {{$post->created_at->diffForHumans()}}</span></h5>
-            </div>
-            <div class="d-flex justify-content-center mb-4">
-                <hr width="40%" class="text-dark">
-            </div>
-                <h5 class="text-center">{{$post->body}}</h5>
-        </div>
-      </div>
-      <div class="rightcolumn">
-        <div class="card">
-          <img width="40%" class="d-block m-auto" src="/img/أبطال الديجيتال.png" alt="Logo">
-          <strong class="text-muted text-center my-4">أبطال الديجيتال  هو نادي لاكتشاف المواهب المعلوماتية و تطويرها وكيحرص على ادماج الشباب في عالم الديجيتال </strong>
-        </div>
-        <div class="card">
-          <h3>Popular Post</h3>
-          <div class="text-dark"><img style="width: 20%;" src="{{ Voyager::image($postt->image)}}" alt=""> <a href="#">{{$postt->title}}</a></div><br>
-          <div class="text-dark"><img style="width: 20%;" src="{{ Voyager::image($posttt->image)}}" alt=""> <a href="">{{$posttt->title}}</a></div><br>
-          <div class="text-dark"><img style="width: 20%;" src="{{ Voyager::image($postttt->image)}}" alt=""> <a href="">{{$postttt->title}}</a></div>
-        </div>
-      </div>
-    </div>
-  
-    <!-- ////////////////////////////////////////////////// -->
-
-
-
-  <!-- Footer Start -->
-        
-  <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s" dir="rtl">
-    <div class="container py-5 px-lg-5">
-        <div class="row g-5">
-            <div class="col-md-4 col-lg-3">
-                <p class="section-title text-white h5 mb-4"><strong>العنوان</strong><span></span></p>
-                <p><i class="fa fa-map-marker-alt me-1"></i> الثانوية الإعدادية علال الفاسي</p>
-                <p><i class="fa fa-phone-alt me-1"></i > 538 885 607 212+</p>
-                <p><i class="fa fa-envelope me-1"></i> info@example.com</p>
-                <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <p class="section-title text-white h5 mb-4"><span></span><strong>رابط سريع</strong></p>
-                <a class="btn btn-link" href="{{route('homes')}}"> شكون حنا</a>
-                <a class="btn btn-link" href="{{route('contact.create')}}"> تواصل معنا</a>
-                <a class="btn btn-link" href="">سياسة الخصوصية</a>
-                <a class="btn btn-link" href="">الشروط والأحكام</a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <p class="section-title text-white mb-4"><span></span><strong>نادي أبطال الديجيتال</strong></p>
-                <p>الهدف هو اننا نحاولو نكتشفو المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</p>
-                
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="row g-3 my-5">
-                        <img class="img-fluid" src="/img/أبطال الديجيتال.png" alt="Image">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container px-lg-2">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                  &copy; <a class="border-bottom" href="{{route('homes')}}">Degital</a>, جميع الحقوق محفوظة. 
-                    
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
-                </div>
-                <div class="col-md-6 text-center text-md-end" dir="ltr">
-                    <div class="footer-menu">
-                        <a href="{{route('homes')}}">الرئيسية</a>
-                        <a href="">Cookies</a>
-                        <a href="">مساعدة</a>
-                        <a href="">FQAs</a>
+            <div class="row m-5">
+                <div class="leftcolumn">
+                    <div class="card">
+                        <img src="{{ Voyager::image($post->image)}}" alt="..." style="height: 500px">
                     </div>
-                    <div class="col-md-6 mt-2">
-                        <strong>Réalisé par </strong>
-                        <a href="https://ajicod.com/">AJCOD</a>
-                        <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
-
+                    <div>
+                        <h2 class="mt-4">{{$post->title}}</h2>
+                        <div class="d-flex justify-content-center align-items-center mt-4 flex-column flex-md-row">
+                            <h5 class="text-muted mx-5"><i class="bi bi-person">{{$user->name}}</i> </h5>
+                            <h5 class="text-muted mx-5"><i class="bi bi-eye"></i> {{$post->nb_visit}}</h5>
+                            <h5 class="text-muted mx-3"><i class="bi bi-calendar-event"></i> <span dir="ltr"> {{$post->created_at->diffForHumans()}}</span></h5>
+                        </div>
+                        <div class="d-flex justify-content-center mb-4">
+                            <hr width="40%" class="text-dark">
+                        </div>
+                        <h5 class="text-center"> {!! $post->body !!}</h5>
+                    </div>
+                </div>
+                <div class="rightcolumn">
+                    <div class="card">
+                        <img width="40%" class="d-block m-auto" src="/img/أبطال الديجيتال.png" alt="Logo">
+                        <strong class="text-muted text-center my-4">أبطال الديجيتال هو نادي لاكتشاف المواهب المعلوماتية و تطويرها وكيحرص على ادماج الشباب في عالم الديجيتال </strong>
+                    </div>
+                    <div class="card">
+                        <h3>Popular Post</h3>
+                        @foreach($posts as $post)
+                        <div class="text-dark">
+                            <img style="width: 20%;" src="{{ Voyager::image($post->image)}}" alt="">
+                            <a href="{{ route('posts.show', $post->slug) }}">{{$post->title}}</a>
+                        </div>
+                        @endforeach
+                    </div>
+                    <div class="card">
+                        <h3>Categories</h3>
+                        @foreach($categories as $category)
+                        <ul class="cat-list">
+                            <li class="list-group-item @if(Request::routeIs('blog_single')) @if($category->id == $post->category->id) active @endif @endif">
+                                <a href="{{ route('blogs.index', $category->slug) }}" class="d-flex justify-content-between @if(Request::routeIs('blog_single')) @if($category->id == $post->category->id) text-white @endif @endif">
+                                    <p>{{ $category->name }}</p>
+                                    <p>{{ $category->posts->count() }}</p>
+                                </a>
+                            </li>
+                        </ul>
+                        @endforeach
                     </div>
                 </div>
             </div>
+
+            <!-- ////////////////////////////////////////////////// -->
+
+
+
+            <!-- Footer Start -->
+
+            <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s" dir="rtl">
+                <div class="container py-5 px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-md-4 col-lg-3">
+                            <p class="section-title text-white h5 mb-4"><strong>العنوان</strong><span></span></p>
+                            <p><i class="fa fa-map-marker-alt me-1"></i> الثانوية الإعدادية علال الفاسي</p>
+                            <p><i class="fa fa-phone-alt me-1"></i> 538 885 607 212+</p>
+                            <p><i class="fa fa-envelope me-1"></i> info@example.com</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <p class="section-title text-white h5 mb-4"><span></span><strong>رابط سريع</strong></p>
+                            <a class="btn btn-link" href="{{route('homes')}}"> شكون حنا</a>
+                            <a class="btn btn-link" href="{{route('contact.create')}}"> تواصل معنا</a>
+                            <a class="btn btn-link" href="">سياسة الخصوصية</a>
+                            <a class="btn btn-link" href="">الشروط والأحكام</a>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <p class="section-title text-white mb-4"><span></span><strong>نادي أبطال الديجيتال</strong></p>
+                            <p>الهدف هو اننا نحاولو نكتشفو المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</p>
+
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="row g-3 my-5">
+                                <img class="img-fluid" src="/img/أبطال الديجيتال.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-lg-2">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                &copy; <a class="border-bottom" href="{{route('homes')}}">Degital</a>, جميع الحقوق محفوظة.
+
+                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                                <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
+                            </div>
+                            <div class="col-md-6 text-center text-md-end" dir="ltr">
+                                <div class="footer-menu">
+                                    <a href="{{route('homes')}}">الرئيسية</a>
+                                    <a href="">Cookies</a>
+                                    <a href="">مساعدة</a>
+                                    <a href="">FQAs</a>
+                                </div>
+                                <div class="col-md-6 mt-2">
+                                    <strong>Réalisé par </strong>
+                                    <a href="https://ajicod.com/">AJCOD</a>
+                                    <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
         </div>
-    </div>
-</div>
-<!-- Footer End -->
 
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/lib/wow/wow.min.js"></script>
+        <script src="/lib/easing/easing.min.js"></script>
+        <script src="/lib/waypoints/waypoints.min.js"></script>
+        <script src="/lib/counterup/counterup.min.js"></script>
+        <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="/lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="/lib/lightbox/js/lightbox.min.js"></script>
 
-<!-- Back to Top -->
-<a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-</div>
-
-<!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/lib/wow/wow.min.js"></script>
-<script src="/lib/easing/easing.min.js"></script>
-<script src="/lib/waypoints/waypoints.min.js"></script>
-<script src="/lib/counterup/counterup.min.js"></script>
-<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="/lib/isotope/isotope.pkgd.min.js"></script>
-<script src="/lib/lightbox/js/lightbox.min.js"></script>
-
-<!-- Template Javascript -->
-<script src="/js/main.js"></script>
-<script src="/js/script.js"></script>
+        <!-- Template Javascript -->
+        <script src="/js/main.js"></script>
+        <script src="/js/script.js"></script>
 </body>
 
 </html>
