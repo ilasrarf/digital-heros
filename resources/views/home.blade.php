@@ -7,14 +7,14 @@
         <div class="col-md-8" dir="rtl">
             <div class="card d-flex">
                 <div class="card-header text-dark text-center fw-bold">{{ __('Dashboard') }}</div>
-                <div class="card-body border border-danger text-dark text-center my-2">
+                <div class="card-body text-dark text-center my-2">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
                     {{ __('سيتم معلالجة طلبك قريبا!') }}
-                    <br><a href="{{ route('voyager.dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                    <br><a href="{{ route('voyager.dashboard') }}" class="btn btn-outline-warning my-2">Dashboard</a>
                 </div>
             </div>
         </div>

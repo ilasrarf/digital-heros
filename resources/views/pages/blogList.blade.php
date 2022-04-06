@@ -161,25 +161,21 @@
                 <div class="container px-lg-2">
                     <div class="copyright">
                         <div class="row">
-                            <div class="col-md-5 text-center text-md-end mb-3 mb-md-0">
-                                &copy; <a class="border-bottom" href="{{route('homes')}}">Digital</a>, جميع الحقوق محفوظة.
-
-                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                                <!-- من تصميم <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
+                            <div class="col-md-5 text-center mb-3 mb-md-0">
+                                &copy; <a class="border-bottom" href="#">Digital</a>, جميع الحقوق محفوظة.
                             </div>
-                            <div class="col-md-4 text-center text-md-star">
+                            <div class="col-md-6 text-end ">
                                 <div class="footer-menu">
                                     <a href="{{route('homes')}}">الرئيسية</a>
                                     <a href="">Cookies</a>
                                     <a href="">مساعدة</a>
                                 </div>
-                                <div class="col-md-6 mt-2">
-                                    <strong>Réalisé par </strong>
-                                    <a href="https://ajicod.com/">AJICOD</a>
-                                    <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
-
-                                </div>
                             </div>
+                            <div class="text-center mt-3">
+                                <strong>Réalisé par </strong>
+                                <a href="https://ajicod.com/">AJICOD</a>
+                                <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
+                        </div>
                         </div>
                     </div>
                 </div>

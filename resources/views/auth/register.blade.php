@@ -111,7 +111,7 @@
                           {{-- name & lastname --}}
                           <div class="input_div">
                               <div class="input_text">
-                                <input id="firstname" type="text" class="written_name @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname') }}"  autocomplete="firstname" >
+                                <input id="firstname" type="text" class="written_name @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname') }}" require required  autocomplete="firstname" >
                                 <label for="firstname">{{ __('السمية') }}</label>
     
                                     <div class="col-md-6">
@@ -124,7 +124,7 @@
                                     </div>
                               </div>
                               <div class="input_text">
-                                <input id="lastname" class="form-control @error('الكنية') is-invalid @enderror" name="lastname" value="{{ old('الكنية') }}"  autocomplete="lastname" type="text" required /> 
+                                <input id="lastname" class="form-control @error('الكنية') is-invalid @enderror" name="lastname" value="{{ old('الكنية') }}" require required  autocomplete="lastname" type="text" /> 
                                 <label for="lastname">{{ __('الكنية') }}</label>
   
                                 <div class="col-md-6">
@@ -143,7 +143,7 @@
                             <div class="input_div">
                               
                               <div class="input_text">
-                                  <input id="tele" type="number" class="form-control @error('tele') is-invalid @enderror" name="tele" value="{{ old('tele') }}"  autocomplete="tele">
+                                  <input id="tele" type="number" class="form-control @error('tele') is-invalid @enderror" name="tele" value="{{ old('tele') }}" require required  autocomplete="tele">
                                   <label for="tele">{{ __('0600000000*') }}</label>
   
                                   <div class="col-md-6">
@@ -158,7 +158,7 @@
                         {{-- end nb telephone --}}
                         <div class="mb-3">
                           <label for="date" class="form-label fw-bold" style="color:rgb(129, 33, 219)">تاريخ الإزدياد</label>
-                          <input class="chois" type="date" id="date" name="date"  />
+                          <input class="chois" type="date" id="date" require name="date"  />
                       </div>
   
                         {{-- Sexe --}}
@@ -181,7 +181,7 @@
   
                             <div class="mb-3">
                                 <label for="avatar" class="form-label fw-bold" style="color:rgb(129, 33, 219)">حمل صورة</label>
-                                <input class="chois" type="file" id="avatar" name="avatar" />
+                                <input class="chois" type="file" id="avatar" require name="avatar" />
                             </div>
   
                         {{-- end photo --}}
@@ -220,9 +220,6 @@
                             </div>
                         </div> --}}
 
-
-                        {{-- hadi dyala wach mokarar wla la  --}}
-
                         <div class="d-flex justify-content-center mt-4">
                           <label for="double_sur_classe" class="form-label fw-bold " style="color:rgb(129, 33, 219)">مكرر في السنة 3 ؟</label>
                           <div class="d-flex ms-5">
@@ -238,19 +235,16 @@
                         </div>
 
                      </div>
-                     
-
-                     {{-- hadi dyal mo3dal dawra omihnat lab omihnat l2ab --}}
 
                      <div class="input_div">
                       <div class="input_text">
-                        <input type="text" require required name="classe" />
+                        <input type="number" require required name="classe" />
                         <label>القسم</label>
                       </div>
                     </div>
                       <div class="input_div">
                         <div class="input_text">
-                          <input type="text" require required name="note_de_semester"/>
+                          <input type="number" require required name="note_de_semester"/>
                           <label>معدل الدورة الأولى</label>
                         </div>
                       </div>
@@ -404,27 +398,24 @@
         </div>
             <div class="px-lg-2">
               <div class="copyright">
-                  <div class="row">
-                      <div class="col-md-5 text-center text-md-end mb-3 mb-md-0">
-                          &copy; <a class="border-bottom" href="{{route('homes')}}">Digital</a>, جميع الحقوق محفوظة. 
-                          
-                          <!--/*** This template is free as long as you keep the footers author’s credit link/attribution link/backlink. If you'd like to use the template without the footers author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                          <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
-                      </div>
-                      <div class="col-md-4 text-center text-md-star">
-                          <div class="footers-menu">
-                            <a href="{{route('homes')}}">الرئيسية</a>
-                            <a href="">Cookies</a>
-                            <a href="">مساعدة</a>
-                          </div>
-                          <div class="col-md-6 mt-2">
-                            <strong>Réalisé par </strong>
-                            <a href="https://ajicod.com/">AJICOD</a>
-                            <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
-                        </div>
-                      </div>
+                <div class="row">
+                  <div class="col-md-6 text-center mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Digital</a>, جميع الحقوق محفوظة.
                   </div>
-              </div>
+                    <div class="col-md-6 text-center mb-md-0">
+                        <div class="footers-menu">
+                          <a href="{{route('homes')}}">الرئيسية</a>
+                          <a href="">Cookies</a>
+                          <a href="">مساعدة</a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                      <strong>Réalisé par </strong>
+                      <a href="https://ajicod.com/">AJICOD</a>
+                      <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
         <!-- Footer End -->

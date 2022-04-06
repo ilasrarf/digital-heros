@@ -60,8 +60,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-2 py-lg-0">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light " dir="rtl">
+            <div class="container"> 
                 <a href="{{route('homes')}}" class="navbar-brand p-0">
                     <img src="/img/أبطال الديجيتال.png" alt="Logo" />
                   </a>
@@ -76,7 +76,7 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto" dir="rtl">
+                    <ul class="navbar-nav">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -97,10 +97,10 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item fw-bold" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
-                                        {{ __('تسجيل الخروج') }}
+                                        {{ __('تسجيل الخروج') }} 
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
