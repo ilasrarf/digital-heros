@@ -121,7 +121,7 @@
         </div>
         <div class="hh" data-wow-delay="0.1s">
             <div class="d-lg-flex align-items-center w-75">
-                <div class="parent flex-shrink-0">
+                <div class="parent flex-shrink-0 me-3">
                     <div class="ch ch1" id="1" onclick="content(1)">
                         <p class="me-2 mt-3">كيفاش</p>
                         {{-- <i class="ms-4 bi bi-x-diamond-fill"></i> --}}
@@ -135,7 +135,7 @@
                         <p class="me-2 mt-3">شنو الهدف</p>
                     </div>
                 </div>
-                <div class="mx-5">
+                <div class="mx-1 mt-3">
                     <h2 style="color: #fba504;" id="head">كيفاش</h2>
                     <hr style="color: #6222CC; height: 10px; border-radius: 15px;">
                     <h4 id="headd">كيفاش نشأ نادي أبطال الديجتال</h4>

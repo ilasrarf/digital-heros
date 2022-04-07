@@ -11,6 +11,10 @@
   background: white;
 }
 
+.img{
+  height: 200px;
+}
+
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
@@ -52,5 +56,17 @@
   .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
+  }
+}
+
+@media (min-width: 992px) { 
+  .img{
+    height: 400px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .leftcolumn {
+    width: 60%;
   }
 }
