@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Login</title>
+    <title>دخول</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -61,7 +61,7 @@
 
       <!-- Navbar-->
       <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-2 py-lg-0">
-          <a href="" class="navbar-brand p-0">
+          <a href="{{route('homes')}}" class="navbar-brand p-0">
             <img src="img/أبطال الديجيتال.png" alt="Logo" />
           </a>
           <button
@@ -74,16 +74,25 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto py-0">
-                <a href="{{route('homes')}}" class="nav-item nav-link active">الرئيسية</a>
+                <a href="{{route('homes')}}" class="nav-item nav-link">الرئيسية</a>
                 <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">شكون حنا</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="{{route('homes')}}#about" class="dropdown-item">شكون حنا</a>
+                        <a href="{{route('homes')}}#الأهداف" class="dropdown-item">الأهداف</a>
+                        <a href="{{route('homes')}}#الأعضاء" class="dropdown-item">الأعضاء</a>
+                        {{-- <a href="#المنخرطين" class="dropdown-item">المنخرطين</a> --}}
+                    </div>
+                </div>
                 <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
-                <a href="{{route('homes')}}" class="nav-item nav-link">تواصل معنا</a>
+                <a href="{{route('contact.create')}}" class="nav-item nav-link">تواصل معنا</a>
             </div>
-            <a href="{{ route('login') }}" class="btn rounded-3 text-dark bg-light py-1 px-3 ms-2 d-lg-block">دخول</a>
-              @if (Route::has('register'))
-            <a href="{{ route('register') }}" class="btn rounded-3 py-1 text-dark px-3 ms-3 d-lg-block" style="background-color: #FBA504;">التسجيل</a>
-              @endif
-          </div>
+            <a href="{{ route('login') }}" class="b1 btn rounded-3 py-1 px-3 ms-2 d-lg-block active">دخول</a>
+            @if (Route::has('register'))
+            <a href="{{ route('register') }}" class="b2 btn rounded-3 py-1 px-3 ms-3 d-lg-block" style="background-color: #FBA504;">التسجيل</a>
+            @endif
+        </div>
         </nav>
       <!-- Navbar-->
       <!-- login -->
@@ -177,7 +186,7 @@
             <p class="section-title text-white h5 mb-4"><span></span><strong>العنوان</strong></p>
             <p><i class="fa fa-map-marker-alt me-1"></i> الثانوية الإعدادية علال الفاسي</p>
             <p><i class="fa fa-phone-alt me-1"></i > 538 885 607 212+</p>
-            <p><i class="fa fa-envelope me-1"></i> info@example.com</p>
+            <a href="mailto:ste.ajicod@gmail.com" class="text-light"><i class="fa fa-envelope me-1"></i> ste.ajicod@gmail.com</a>
             <div class="d-flex pt-2">
                 <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -208,7 +217,7 @@
       <div class="copyright">
         <div class="row">
           <div class="col-md-6 text-center mb-3 mb-md-0">
-            &copy; <a class="border-bottom" href="#">Digital</a>, جميع الحقوق محفوظة.
+            &copy; <a class="border-bottom" href="https://agency.ajicod.com/">AJICOD</a>, جميع الحقوق محفوظة.
           </div>
             <div class="col-md-6 text-center mb-md-0">
                 <div class="footers-menu">
@@ -219,8 +228,7 @@
             </div>
             <div class="text-center mt-3">
               <strong>Réalisé par </strong>
-              <a href="https://ajicod.com/">AJICOD</a>
-              <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
+              <a href="https://agency.ajicod.com/">AJICOD</a>
           </div>
         </div>
     </div>

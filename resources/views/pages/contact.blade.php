@@ -47,7 +47,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
+                <a href="{{route('homes')}}" class="navbar-brand p-0">
                     <img src="/img/أبطال الديجيتال.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -55,15 +55,24 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="{{route('homes')}}" class="nav-item nav-link active">الرئيسية</a>
+                        <a href="{{route('homes')}}" class="nav-item nav-link">الرئيسية</a>
                         <a href="{{route('blogs.index')}}" class="nav-item nav-link">المقالات</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">شكون حنا</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="{{route('homes')}}#about" class="dropdown-item">شكون حنا</a>
+                                <a href="{{route('homes')}}#الأهداف" class="dropdown-item">الأهداف</a>
+                                <a href="{{route('homes')}}#الأعضاء" class="dropdown-item">الأعضاء</a>
+                                {{-- <a href="#المنخرطين" class="dropdown-item">المنخرطين</a> --}}
+                            </div>
+                        </div>
                         <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
-                        <a href="#contact" class="nav-item nav-link">تواصل معنا</a>
+                        <a href="#contact" class="nav-item nav-link active">تواصل معنا</a>
                     </div>
                     <a href="{{ route('login') }}" class="b1 btn rounded-3 py-1 px-3 ms-2 d-lg-block">دخول</a>
-                        @if (Route::has('register'))
+                    @if (Route::has('register'))
                     <a href="{{ route('register') }}" class="b2 btn rounded-3 py-1 px-3 ms-3 d-lg-block" style="background-color: #FBA504;">التسجيل</a>
-                        @endif
+                    @endif
                 </div>
             </nav>
  <!-- End Hero -->
@@ -77,7 +86,7 @@
                             <nav aria-label="breadcrumb" class="text-white">
                                 <ol class="breadcrumb justify-content-center" >
                                     <li class="breadcrumb-item"><a class="text-white" href="{{route('homes')}}">الرئيسية </a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page"><a class="text-white" href="#contact">Contact</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page"><a class="text-white" href="#contact">تواصل معنا</a></li>
                                 </ol>
                             </nav>
                         </div>
@@ -110,11 +119,11 @@
             <div class="container-xxl py-5" id="contact">
                 <div class="container py-5 px-lg-5">
                     <div class="wow fadeInUp" data-wow-delay="0.1s">
-                        <h3 class="section-title text-secondary justify-content-center" ><span></span>&nbsp;تواصل معنا&nbsp;<span></span></h3>
-                        <h1 class="text-center mb-5">حنى هنا، تواصل معنا وسولنا لي بغيتي</h1>
+                        <h3 class="section-title text-secondary justify-content-center" ><span></span>تواصل معنا<span></span></h3>
+                        <h1 class="text-center mb-5">حنى هنا، تواصل معنا وسولنا</h1>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-lg-7">
+                        <div class="col-lg-11">
                             <div class="wow fadeInUp" data-wow-delay="0.3s">
                                 
                                 <form action="{{route('contact.store')}}" method="POST">
@@ -123,7 +132,7 @@
                                         <div class="col-md-6">
                                             <div class="form-floating">
                                                 <input type="text" name="fullname" class="form-control" id="name" placeholder="Your Name">
-                                                <label for="fullname" dir="rtl">اسم المستخدم</label>
+                                                <label for="fullname">اسم المستخدم</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -156,8 +165,8 @@
             </div>
             <!-- Map Start-->
 
-            <div id="map" class="container-xxl py-5 my-5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.3341742345506!2d-9.53514475219802!3d30.373063228932097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3c8050148c217%3A0xd482a161ab759058!2sColl%C3%A8ge%20Allal%20El%20Fassi!5e0!3m2!1sfr!2sma!4v1646933102919!5m2!1sfr!2sma" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div id="map" class="container-xxl py-xl-5 my-5 d-flex justify-content-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.3341742345506!2d-9.53514475219802!3d30.373063228932097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3c8050148c217%3A0xd482a161ab759058!2sColl%C3%A8ge%20Allal%20El%20Fassi!5e0!3m2!1sfr!2sma!4v1646933102919!5m2!1sfr!2sma" width="90%" height="520px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
         <!-- end Map -->
@@ -175,7 +184,7 @@
                         <p class="section-title text-white h5 mb-4"><span></span><strong>العنوان</strong></p>
                         <p><i class="fa fa-map-marker-alt me-1"></i> الثانوية الإعدادية علال الفاسي</p>
                         <p><i class="fa fa-phone-alt me-1"></i > 538 885 607 212+</p>
-                        <p><i class="fa fa-envelope me-1"></i> info@example.com</p>
+                        <a href="mailto:ste.ajicod@gmail.com" class="text-light"><i class="fa fa-envelope me-1"></i> ste.ajicod@gmail.com</a>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -206,7 +215,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Digital</a>, جميع الحقوق محفوظة.
+                            &copy; <a class="border-bottom" href="https://agency.ajicod.com/">AJICOD</a>, جميع الحقوق محفوظة.
                         </div>
                         <div class="col-md-6 text-center mb-3 mb-md-0">
                             <div class="footer-menu">
@@ -217,8 +226,7 @@
                         </div>
                         <div class="text-center mt-2">
                             <strong>Réalisé par </strong>
-                            <a href="https://ajicod.com/">AJICOD</a>
-                            <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
+                            <a href="https://agency.ajicod.com/">AJICOD</a>
                     </div>
                     </div>
                 </div>

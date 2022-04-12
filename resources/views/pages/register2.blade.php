@@ -253,7 +253,7 @@
                     <p class="section-title text-white h5 mb-4"><strong>العنوان</strong><span></span></p>
                     <p><i class="fa fa-map-marker-alt me-1"></i> الثانوية الإعدادية علال الفاسي</p>
                     <p><i class="fa fa-phone-alt me-1"></i > 538 885 607 212+</p>
-                    <p><i class="fa fa-envelope me-1"></i> info@example.com</p>
+                    <a href="mailto:ste.ajicod@gmail.com"><i class="fa fa-envelope me-1"></i> info@example.com</a>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>

@@ -116,8 +116,8 @@
         <!-- Navbar & Hero End -->
         <!-- //////////////////////// -->
         <div class="wow fadeInUp mt-5" data-wow-delay="0.1s">
-            <h3 class="section-title text-secondary justify-content-center"><span></span>&nbsp; شكون هو&nbsp;<span></span></h3>
-            <h1 class="text-center"> نادي أبطال الديجيتال </h1>
+            <h3 class="section-title text-secondary justify-content-center"><span></span>شكون هو نادي<span></span></h3>
+            <h1 class="text-center">أبطال الديجيتال</h1>
         </div>
         <div class="hh" data-wow-delay="0.1s">
             <div class="d-lg-flex align-items-center w-75">
@@ -150,7 +150,7 @@
         <div class="container-xxl py-5" id="الأهداف">
             <div class="container py-5 px-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <h3 class="section-title text-secondary justify-content-center"><span></span>&nbsp;أهداف النادي&nbsp;<span></span></h3>
+                    <h3 class="section-title text-secondary justify-content-center"><span></span>أهداف النادي<span></span></h3>
                     <h1 class="text-center mb-5">يهدف نادي أبطال الديجيتال </h1>
                 </div>
                 <div class="row g-4">
@@ -167,7 +167,7 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-laptop-code fa-2x"></i>
                             </div>
-                            <p class="m-0 fs-4 fw-bold">بناء جيل واعي ومبدع</p>
+                            <p class="m-0 fs-4 fw-bold">بناء جيل واعي ومبدع في الديجتال</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -175,7 +175,7 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fab fa-facebook-f fa-2x"></i>
                             </div>
-                            <p class="m-0 fs-4 fw-bold">تطوير و تثقيف التلاميذ</p>
+                            <p class="m-0 fs-4 fw-bold">تطوير و تثقيف التلاميذ في المجال</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -392,8 +392,8 @@
         <div class="container-xxl py-5" id="contact">
             <div class="container py-5 px-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <h3 class="section-title text-secondary justify-content-center"><span></span>&nbsp;تواصل معنا&nbsp;<span></span></h3>
-                    <h1 class="text-center mb-5">حنى هنا، تواصل معنا وسولنا لي بغيتي</h1>
+                    <h3 class="section-title text-secondary justify-content-center"><span></span>تواصل معنا<span></span></h3>
+                    <h1 class="text-center mb-5">حنى هنا، تواصل معنا وسولنا</h1>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
@@ -448,7 +448,7 @@
                         <p class="section-title text-white h5 mb-4"><span></span><strong>العنوان</strong></p>
                         <p><i class="fa fa-map-marker-alt me-1"></i> الثانوية الإعدادية علال الفاسي</p>
                         <p><i class="fa fa-phone-alt me-1"></i> 538 885 607 212+</p>
-                        <p><i class="fa fa-envelope me-1"></i> info@example.com</p>
+                        <a href="mailto:ste.ajicod@gmail.com" class="text-light"><i class="fa fa-envelope me-1"></i> ste.ajicod@gmail.com</a>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -478,21 +478,20 @@
             <div class="container px-lg-2">
                 <div class="copyright">
                     <div class="row">
-                        <div class="col-md-5 text-center mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Digital</a>, جميع الحقوق محفوظة.
+                        <div class="col-md-6 text-center mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="https://agency.ajicod.com/">AJICOD</a>, جميع الحقوق محفوظة.
                         </div>
-                        <div class="col-md-6 text-end ">
+                        <div class="col-md-6 text-center mb-3 mb-md-0">
                             <div class="footer-menu">
                                 <a href="{{route('homes')}}">الرئيسية</a>
                                 <a href="">Cookies</a>
                                 <a href="">مساعدة</a>
                             </div>
                         </div>
-                        <div class="text-center mt-3">
+                        <div class="text-center mt-2">
                             <strong>Réalisé par </strong>
-                            <a href="https://ajicod.com/">AJICOD</a>
-                            <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
-                        </div>
+                            <a href="https://agency.ajicod.com/">AJICOD</a>
+                    </div>
                     </div>
                 </div>
             </div>

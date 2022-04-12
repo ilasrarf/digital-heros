@@ -210,7 +210,7 @@
           <div class="copyright">
               <div class="row">
                   <div class="col-md-5 text-center mb-3 mb-md-0">
-                      &copy; <a class="border-bottom" href="#">Digital</a>, جميع الحقوق محفوظة.
+                      &copy; <a class="border-bottom" href="https://agency.ajicod.com/">Ajicod</a>, جميع الحقوق محفوظة.
                   </div>
                   <div class="col-md-6 text-end ">
                       <div class="footer-menu">
@@ -221,8 +221,7 @@
                   </div>
                   <div class="text-center mt-3">
                       <strong>Réalisé par </strong>
-                      <a href="https://ajicod.com/">AJICOD</a>
-                      <p class="text-secondary">I.asrarfi <em class="text-light">-</em>&nbsp; R.Ouali <em class="text-light">-</em>&nbsp; Y.Malqui</p>
+                      <a href="https://agency.ajicod.com/">AJICOD</a>
               </div>
               </div>
           </div>
