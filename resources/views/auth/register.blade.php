@@ -94,7 +94,7 @@
               </div>
               <a href="{{ route('login') }}" class="b1 btn rounded-3 py-1 px-3 ms-2 d-lg-block">دخول</a>
               @if (Route::has('register'))
-              <a href="{{ route('register') }}" class="b2 btn rounded-3 py-1 px-3 ms-3 d-lg-block active" style="background-color: #FBA504;">التسجيل</a>
+              <a href="{{ route('register') }}" class="b2 btn rounded-3 py-1 px-3 ms-3 d-lg-block" style="background-color: #FBA504;">التسجيل</a>
               @endif
           </div>
           </nav>
@@ -229,7 +229,7 @@
                             </div>
                         </div> --}}
 
-                        <div class="d-flex justify-content-center mt-4">
+                        <div class="d-flex justify-content-center mt-4 ">
                           <label for="double_sur_classe" class="form-label fw-bold " style="color:rgb(129, 33, 219)">مكرر في السنة الثالثة؟</label>
                           <div class="d-flex ms-5">
                             <div class="form-check">
@@ -245,15 +245,29 @@
 
                      </div>
 
-                     <div class="input_div">
-                      <div class="input_text">
-                        <input type="number" id="quantity" min="1" max="12" require required name="classe" />
-                        <label>القسم</label>
-                      </div>
-                    </div>
+
+                     <div class="col-md-4 my-3" style="width: 100%; display: flex;justify-content: space-between;"  >
+                            
+                          <label for="role" class="form-label fw-bold " style="color:rgb(129, 33, 219)">{{ __('القسم') }}</label>
+                          
+                            <div class="col-md-6">
+                                <select style='width: 100%' name="role_id" id="role_id">
+                                    <option value="3">Student</option>
+                                </select>
+                                @error('role_id')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                            <div></div>
+                        </div>
+
+
+                     
                       <div class="input_div">
                         <div class="input_text">
-                          <input type="number" min="0" max="20" require required name="note_de_semester"/>
+                          <input type="number" require required name="note_de_semester"/>
                           <label>معدل الدورة الأولى</label>
                         </div>
                       </div>
@@ -288,7 +302,8 @@
                       <div class="manage">
                         <h3 class="text-secondary">إنشاء الحساب</h3>
                       </div>
-                      <div class="input_div">
+                      <div style="height: 300px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                        <div class="input_div">
                         <div class="input_text">
                             <input id="email" type="email" class="input_text @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" require required autocomplete="email">
                             <label for="email">{{ __('الإيمايل ديالك') }}</label>
@@ -325,6 +340,7 @@
                           <i class="fa fa-eye-slash con_eye"></i>
                         </div>
                       </div>
+                    </div>
                       <div class="button step_2 step_4">
                         <button class="prev_btn">السابق</button>
                         <button type="submit" class="sbmt_btn">

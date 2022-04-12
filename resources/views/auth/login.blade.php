@@ -88,7 +88,7 @@
                 <a href="" class="nav-item nav-link">مشروع المؤسسة</a>
                 <a href="{{route('contact.create')}}" class="nav-item nav-link">تواصل معنا</a>
             </div>
-            <a href="{{ route('login') }}" class="b1 btn rounded-3 py-1 px-3 ms-2 d-lg-block active">دخول</a>
+            <a href="{{ route('login') }}" class="b1 btn rounded-3 py-1 px-3 ms-2 d-lg-block">دخول</a>
             @if (Route::has('register'))
             <a href="{{ route('register') }}" class="b2 btn rounded-3 py-1 px-3 ms-3 d-lg-block" style="background-color: #FBA504;">التسجيل</a>
             @endif
