@@ -46,3 +46,33 @@ function content(i){
     }
     
     })(jQuery);
+
+
+function rejex(){
+    var checkBox1 = document.getElementById("check1");
+    var checkBox2 = document.getElementById("check2");
+    var inp1= document.getElementById("inp_pere");
+    var inp2 = document.getElementById("inp_mere");
+    var inpvlue = document.getElementById("inp_pere").value;
+
+    if (checkBox1.checked == true){
+        inp1.setAttribute("disabled", "");
+        var inpvlue = "";
+    } else {
+        inp1.removeAttribute("disabled");
+    }
+
+    if (checkBox2.checked == true ){
+        inp2.setAttribute("disabled", "");
+    } else {
+        inp2.removeAttribute("disabled");
+    }
+}
+
+// function steps(){
+//     var stp1 = document.getElementById("stp1");
+//     var stp2 = document.getElementById("stp2");
+
+//     stp2.classList.add("active");
+//     stp1.classList.remove("active");
+// }

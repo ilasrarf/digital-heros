@@ -138,7 +138,7 @@
                 <div class="mx-1 mt-3">
                     <h2 style="color: #fba504;" id="head">كيفاش</h2>
                     <hr style="color: #6222CC; height: 10px; border-radius: 15px;">
-                    <h4 id="headd">كيفاش نشأ نادي أبطال الديجتال</h4>
+                    <h4 id="headd">كيفاش نشأ نادي أبطال الديجيتال</h4>
                     <h5 id="headdd">أستاذ المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو .</h5>
                 </div>
             </div>
@@ -167,7 +167,7 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-laptop-code fa-2x"></i>
                             </div>
-                            <p class="m-0 fs-4 fw-bold">بناء جيل واعي ومبدع في الديجتال</p>
+                            <p class="m-0 fs-4 fw-bold">بناء جيل واعي ومبدع في الديجيتال</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -284,7 +284,7 @@
                         </h2>
                         <div class="postcard__subtitle small">
                             <time datetime="2020-05-25 12:00:00">
-                                <i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2020
+                                <i class="fas fa-calendar-alt mr-2"></i> الاثنين 25 مايو 2020
                             </time>
                         </div>
                         <div class="postcard__bar"></div>
@@ -304,17 +304,17 @@
                     </p>
                     <div class="postcard__text">
                         <h1 class="postcard__title red">
-                            <p>Développeur mobile, le créateur d’application sur le bout des doigts
+                            <p>منشئ التطبيق في متناول يدك
                             </p>
                         </h1>
                         <div class="postcard__subtitle small">
                             <time datetime="2020-05-25 12:00:00">
-                                <i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2020
+                                <i class="fas fa-calendar-alt mr-2"></i> الاثنين 25 مايو 2020
                             </time>
                         </div>
                         <div class="postcard__bar"></div>
                         <div class="postcard__preview-txt">
-                            Avec la démocratisation des Smartphones et des tablettes et l’utilisation massive d'applications, les développeurs mobile ont de quoi bien travailler ! Ce métier a récemment fait son apparition et son nombre ne cesse de s’accroître, la demande d’applications étant toujours très forte.
+                            تقرير حديث صادر عن Statistica يضع عائدات تطبيقات تخطيط المهام الشخصية والمهنية في النهاية 2.4 مليار دولار أمريكي. السبب الرئيسي وراء هذه الإيرادات الضخمة هو أن تطبيقات الأجهزة المحمولة هذه تتيح للمستخدمين أن يكونوا أكثر كفاءة عند التعامل مع مهامهم يوميًا. يمكن أن يساعد تطبيق إدارة المهام المستخدمين على البقاء منظمين وتتبع التقدم وإدارة العديد من المهام بكفاءة.
                         </div>
                         {{-- <ul class="postcard__tagbox">
 					<li class="tag__item play red">
@@ -329,16 +329,19 @@
                     </p>
                     <div class="postcard__text">
                         <h1 class="postcard__title green">
-                            <p>POURQUOI TOUT LE MONDE DEVRAIT APPRENDRE LA PROGRAMMATION
+                            <p>لماذا يجب على الجميع تعلم البرمجة
                             </p>
                         </h1>
                         <div class="postcard__subtitle small">
                             <time datetime="2020-05-25 12:00:00">
-                                <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                                <i class="fas fa-calendar-alt mr-2"></i>الاثنين 25 مايو 2020
                             </time>
                         </div>
                         <div class="postcard__bar"></div>
-                        <div class="postcard__preview-txt">Nous savons tous que la programmation est le point où les gens ont peur. On voit beaucoup d'écrits mais on ne comprend rien, Quand tu décides de l'apprendre tu trouves plein de cours et vous suivez avec eux les première, deuxième et troisième vidéos, vous ne comprenez rien, très nécessaire maintenant,
+                        <div class="postcard__preview-txt">
+                            لماذا يجب علينا تعلم البرمجة,وهل هي موهبه,وهل تعلم البرمجة مقيد بالمبرمجين فقط
+
+نحن نستخدم في حياتنا اليوميه نستخدم عدة نشاطات مختلفة تعتمد على تطبيقات مبنية ومكتوبه بلغات البرمجة او الاكواد. سواء كان الهاتف, تصفح الانترنت او عند البيع والشراء. البرمجة اصبحت جزء لا تجزأ من حياتنا اليوميه.
                         </div>
                         {{-- <ul class="postcard__tagbox">
 					<li class="tag__item play green">

@@ -113,7 +113,7 @@
                   <div class="right-side">
                       <form method="POST" action="{{ route('user.register') }}" enctype="multipart/form-data">
                           @csrf
-                          <div class="main active">
+                          <div class="main active" id="stp2">
                               <div class="manage">
                                 <h3 class="my-2 text-secondary">المعلومات الشخصية</h3>
                               </div>
@@ -207,8 +207,8 @@
   
                   {{-- المعلومات الدراسية --}}
   
-                  <div class="main">
-                      <div class="manage">
+                  <div class="main" id="stp2">
+                      <div class="manage ">
                         <h3 class="text-secondary">المعلومات الدراسية</h3>
                       </div>
                       <div class="d-flex">
@@ -252,7 +252,18 @@
                           
                             <div class="col-md-6">
                                 <select style='width: 100%' name="role_id" id="role_id">
-                                    <option value="3">Student</option>
+                                    <option value="1">3/1</option>
+                                    <option value="2">3/2</option>
+                                    <option value="3">3/3</option>
+                                    <option value="4">3/4</option>
+                                    <option value="5">3/5</option>
+                                    <option value="6">3/6</option>
+                                    <option value="7">3/7</option>
+                                    <option value="8">3/8</option>
+                                    <option value="9">3/9</option>
+                                    <option value="10">3/10</option>
+                                    <option value="11">3/11</option>
+                                    <option value="12">3/12</option>
                                 </select>
                                 @error('role_id')
                                     <span class="invalid-feedback" role="alert">
@@ -272,17 +283,17 @@
                         </div>
                       </div>
                       <div class="input_div">
-                        <input type="checkbox" class="mt-3" name="travail_de_pere" id="flexRadioDefault2" value="" />
+                        <input type="checkbox" class="mt-3" name="travail_de_pere" id="check1" onclick="rejex()"/>
                         <label class="text-muted mt-2" for="flexRadioDefault2">متوفي</label>
                         <div class="input_text">
-                          <input type="text" name="travail_de_pere" /> <label>مهنة الأب</label>
+                          <input type="text" name="travail_de_pere" id="inp_pere" /> <label>مهنة الأب</label>
                         </div>
                       </div>
                       <div class="input_div">
-                        <input type="checkbox" class="mt-3" name="travail_de_mere" id="flexRadioDefault2" />
+                        <input type="checkbox" class="mt-3" name="travail_de_mere" id="check2"  onclick="rejex()"/>
                         <label class="text-muted mt-2" for="flexRadioDefault2">متوفية</label>
                         <div class="input_text">
-                          <input type="text" name="travail_de_mere"  /> <label>مهنة الأم</label>
+                          <input type="text" name="travail_de_mere" id="inp_mere" /> <label>مهنة الأم</label>
                         </div>
                         
                       </div>
@@ -298,7 +309,7 @@
   
                     {{-- الحساب --}}
   
-                    <div class="main">
+                    <div class="main ">
                       <div class="manage">
                         <h3 class="text-secondary">إنشاء الحساب</h3>
                       </div>

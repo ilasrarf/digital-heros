@@ -149,7 +149,7 @@
                                 
                         </div>
                         
-                        <input type="submit" value="{{ __('Login') }}">
+                        <input type="submit" value="{{ __('دخول') }}">
                                 @if (Route::has('password.request'))
                                     <a class="forgot text-muted" href="{{ route('password.request') }}">
                                         {{ __('نسيت كلمة المرور؟') }}

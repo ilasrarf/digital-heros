@@ -112,7 +112,7 @@
                         <strong class="text-muted text-center my-4">أبطال الديجيتال هو نادي لاكتشاف المواهب المعلوماتية و تطويرها وكيحرص على ادماج الشباب في عالم الديجيتال </strong>
                     </div>
                     <div class="card">
-                        <h3>Popular Post</h3>
+                        <h3>المقالات شائعة</h3>
                         @foreach($posts as $post)
                         <div class="text-dark p-1">
                             <img style="width: 20%;" src="{{ Voyager::image($post->image)}}" alt="">
@@ -121,7 +121,7 @@
                         @endforeach
                     </div>
                     <div class="card">
-                        <h3>Categories</h3>
+                        <h3>الفئات</h3>
                         @foreach($categories as $category)
                         <ul class="cat-list p-0">
                             <li class="list-group-item @if(Request::routeIs('blog_single')) @if($category->id == $post->category->id) active @endif @endif">
